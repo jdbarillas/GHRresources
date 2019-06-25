@@ -19,9 +19,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Syllabus
 
+### Fall 2019
+
 ### Instructional Team
 
-**Instructor**: Eric Green, Ph.D., Duke University
+**Instructor**: [Eric Green, Ph.D.](https://globalhealth.duke.edu/people/faculty/green-eric){target="_blank"}, Duke University
 
 **Teaching Assistant**: TBA
 
@@ -46,8 +48,8 @@ We have two broad goals this semester:
 
 The course is divided into six modules:
 
-1. Getting started
-2. Define study aims
+1. Getting started with global health research
+2. Define your study aims
 3. Select a research design
 4. Specify your methods
 5. Practice good science
@@ -79,7 +81,7 @@ Each class session has a dedicated tutorial page that introduces the session and
 
 ### Resources
 
-The main course text is [*Global Health Research: Designs and Methods*](https://themethodsection.com/). You can read it online for free, download a PDF, or get a version for iBooks. I do not recommend reading on a mobile device unless you use the iBooks version.
+The main course text is [*Global Health Research: Designs and Methods*](https://themethodsection.com/){target="_blank"}. You can read it online for free, download a PDF, or get a version for iBooks. I do not recommend reading on a mobile device unless you use the iBooks version.
 
 ### Workload
 
@@ -120,13 +122,13 @@ Please limit your emails to personal matters that are not appropriate for class 
 
 Please note the following:
 
-* If you miss an in-class **application activity**, you will have until the start of the next class to contact the TA and submit your completed work. After this time, you will receive a score of 0 unless you have permission to follow a different schedule. [See here](https://trinity.duke.edu/undergraduate/academic-policies/class-attendance-and-missed-work) for more details about Duke's policies regarding class attendance and missed work.
+* If you miss an in-class **application activity**, you will have until the start of the next class to contact the TA and submit your completed work. After this time, you will receive a score of 0 unless you have permission to follow a different schedule. [See here](https://trinity.duke.edu/undergraduate/academic-policies/class-attendance-and-missed-work){target="_blank"} for more details about Duke's policies regarding class attendance and missed work.
 * **Homework** will be due at the start of class on the date indicated on the schedule. Late submissions will penalized 5 percentage points. For every 24 hours late after the missed deadline, an additional 5 percentage points will be deducted from the score.
-* Students should abide by the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard) at all times. If a questionable circumstance arises, do not hesitate to seek my guidance (before is always better than after).
-* Any student with a documented disability needing academic adjustments or accommodations should speak with me during the first two weeks of class. All discussions will remain confidential. Students with disabilities will also need to contact the [Student Disability Access Office](http://www.access.duke.edu/students/requesting/index.php).
+* Students should abide by the [Duke Community Standard](https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard){target="_blank"} at all times. If a questionable circumstance arises, do not hesitate to seek my guidance (before is always better than after).
+* Any student with a documented disability needing academic adjustments or accommodations should speak with me during the first two weeks of class. All discussions will remain confidential. Students with disabilities will also need to contact the [Student Disability Access Office](http://www.access.duke.edu/students/requesting/index.php){target="_blank"}.
 
 
-## Module 1
+## M1: Getting started
 
 ### Getting Started with Global Health Research
 
@@ -138,10 +140,10 @@ The goal of this module is to introduce you to global health research, describe 
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Aug 27  | [1.1 Welcome](https://try.themethodsection.com/s01-1) |
-| Aug 29  | [1.2 What is global health research?](https://try.themethodsection.com/duke/s01-2) |
-| Sept 3  | [1.3 Developing research ideas]() |
-| Sept 5  | [1.4 Systematic reviews and meta-analyses]() |
+| Aug 27  | [1.1 Welcome](https://try.themethodsection.com/s01-1){target="_blank"} |
+| Aug 29  | [1.2 What is global health research?](https://try.themethodsection.com/duke/s01-2){target="_blank"} |
+| Sept 3  | [1.3 Developing research ideas](){target="_blank"} |
+| Sept 5  | [1.4 Systematic reviews and meta-analyses](){target="_blank"} |
 | Sept 10 | [1.5 Critical appraisal]() |
 
 <br>
@@ -152,7 +154,7 @@ The goal of this module is to introduce you to global health research, describe 
 |:------------------------------|:---------|
 | TBA                           | TBA      |
 
-## Module 2 
+## M2: Define your study aims
 
 ### Define the Aims of your Study
 
@@ -162,9 +164,9 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Sept 12  | [2.1 Research questions and aims]() |
-| Sept 17  | [2.2 The role of theory]() |
-| Sept 19  | [2.3 Outcomes and indicators]() |
+| Sept 12  | [2.1 Research questions and aims](){target="_blank"} |
+| Sept 17  | [2.2 The role of theory](){target="_blank"} |
+| Sept 19  | [2.3 Outcomes and indicators](){target="_blank"} |
 
 
 #### Homework
@@ -173,7 +175,7 @@ The goal of this module is to X.
 |:------------------------------|:---------|
 | TBA                           | TBA      |
 
-## Module 3
+## M3: Select a research design
 
 ### Select a Research Design
 
@@ -185,10 +187,10 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Sept 24  | [3.1 Research designs and causal inference]() |
-| Sept 26  | [3.2 Experimental designs]() |
-| Oct 1  | [3.3 Quasi-experimental designs]() |
-| Oct 3  | [3.4 Observational designs]() |
+| Sept 24  | [3.1 Research designs and causal inference](){target="_blank"} |
+| Sept 26  | [3.2 Experimental designs](){target="_blank"} |
+| Oct 1  | [3.3 Quasi-experimental designs](){target="_blank"} |
+| Oct 3  | [3.4 Observational designs](){target="_blank"} |
 
 <br>
 
@@ -202,12 +204,12 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Oct 10  | [Selecting a research design]() |
-| Oct 15  | [Review]() |
-| Oct 17  | [Midterm]() |
-| Oct 22  | [Midterm results, introduction of final project]() |
+| Oct 10  | [Selecting a research design](){target="_blank"} |
+| Oct 15  | [Review](){target="_blank"} |
+| Oct 17  | [Midterm](){target="_blank"} |
+| Oct 22  | [Midterm results, introduction of final project](){target="_blank"} |
 
-## Module 4
+## M4: Specify your methods
 
 ### Specify Your Methods
 
@@ -219,10 +221,10 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Oct 24  | [4.1 Participants, sampling, and recruitment]() |
-| Oct 29  | [4.2 Sample size and analysis plans]() |
-| Oct 31  | [4.3 Quantitative data collection procedures]() |
-| Nov 5  | [4.4 Qualitative data collection procesures]() |
+| Oct 24  | [4.1 Participants, sampling, and recruitment](){target="_blank"} |
+| Oct 29  | [4.2 Sample size and analysis plans](){target="_blank"} |
+| Oct 31  | [4.3 Quantitative data collection procedures](){target="_blank"} |
+| Nov 5  | [4.4 Qualitative data collection procesures](){target="_blank"} |
 
 <br>
 
@@ -233,7 +235,7 @@ The goal of this module is to X.
 | TBA                           | TBA      |
 
 
-## Module 5
+## M5: Practice good science
 
 ### Practice Good Science
 
@@ -245,9 +247,9 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Nov 7  | [5.1 Collaborations]() |
-| Nov 12  | [5.2 Research ethics]() |
-| Nov 14  | [5.3 Open science]() |
+| Nov 7  | [5.1 Collaborations](){target="_blank"} |
+| Nov 12  | [5.2 Research ethics](){target="_blank"} |
+| Nov 14  | [5.3 Open science](){target="_blank"} |
 
 <br>
 
@@ -258,7 +260,7 @@ The goal of this module is to X.
 | TBA                           | TBA      |
 
 
-## Module 6
+## M6: Make an impact
 
 ### Make an Impact with Your Work
 
@@ -270,8 +272,8 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Nov 19  | [6.1 Sharing your work]() |
-| Nov 21  | [6.2 Impacting policy and practice]() |
+| Nov 19  | [6.1 Sharing your work](){target="_blank"} |
+| Nov 21  | [6.2 Impacting policy and practice](){target="_blank"} |
 
 <br>
 
@@ -286,10 +288,10 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
-| Nov 26  | [Course review]() |
-| Dec 3  | [Peer review (undergrad)]() |
-| Dec 5  | [Proposal revisions (undergrad)]() |
-| TBA  | [TBA]() |
+| Nov 26  | [Course review](){target="_blank"} |
+| Dec 3  | [Peer review (undergrad)](){target="_blank"} |
+| Dec 5  | [Proposal revisions (undergrad)](){target="_blank"} |
+| TBA  | [TBA](){target="_blank"} |
 
 ## Get Help
 
