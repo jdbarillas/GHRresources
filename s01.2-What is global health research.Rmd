@@ -1,0 +1,79 @@
+---
+title: "What is global health research?"
+resource_files:
+- s01.2-What is global health research.Rmd
+- css/custom-learnr.css
+- images/logo_dark.png
+- images/logo.png
+runtime: shiny_prerendered
+output:
+  learnr::tutorial:
+    css: css/custom-learnr.css
+subtitle: Session 1.2
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+**Objective**: The objective of this session is to introduce you to global health research. 
+
+Research is defined as a systematic investigation whose goal is to develop or contribute to generalizable knowledge. As global health is the study and practice of improving health and achieving equity in health, global health research research includes all systematic efforts to create generalizable knowledge of how we can improve health and achieve equity in health for everyone, everywhere.
+
+Given the complexity of our global health challenges, global health research is multidisciplinary and interdisciplinary. This means that, as a budding global health researcher, you will likely collaborate on teams with colleagues from many different fields. Each discipline has its own methodological preferences and core approaches, but we all operate in the same research landscape that is divided into basic and applied research. Much of the literature in global health focuses on our applied challenges, so you will read a lot about clinical research and trials, translational research, implementation research, and M&E (monitoring and evaluation).
+
+So no matter what discipline you call home, or what stage of research you find most interesting, you can make great contributions to our collective efforts to improve health and achieve equity in health.
+
+## Before class
+
+### Prepare
+
+* Read [GHR Chapter 1](http://read.themethodsection.com/ghr.html) and watch/listen to the media embedded in the main text (media in the margin notes are optional).
+* Think about where your interests lie in the global health research landscape and be prepared to share with classmates.
+* Browse one or more of the journals that publish global health research and find at least one article that interests you.
+
+### Pre-Class Assessment
+
+```{r pca01-2, echo=FALSE}
+quiz(#caption = "PCA Session 1.2",
+question("This is question 1",
+  answer("8", message = "Custom message here."),
+  answer("14", message = "Custom message here."),
+  answer("1", correct = TRUE),
+  answer("23", message = "Custom message here."),
+  allow_retry = TRUE
+  ),
+question("This is question 2",
+  answer("a", correct = TRUE),
+  answer("b", message = "Custom message here."),
+  answer("c", message = "Custom message here."),
+  answer("d", message = "Custom message here."),
+  allow_retry = TRUE
+  )
+)
+```
+
+## During class
+
+### Slides
+
+![](https://youtu.be/NpEaa2P7qZI)
+
+### Activity
+
+
+
+## After class
+
+An optional activity is to get to know your local global health resources. For students living in the Research Triangle, this includes:
+
+* [Duke Global Health Institute](https://globalhealth.duke.edu/)
+* [UNC Gillings School of Global Public Health](https://sph.unc.edu/)
+* [fhi360](https://www.fhi360.org/)
+* [IntraHealth International](https://www.intrahealth.org/)
+* [RTI International](https://www.rti.org/)
+
+Visit the websites, take note of upcoming events, sign up for newsletters, and browse faculty/researcher profiles.
