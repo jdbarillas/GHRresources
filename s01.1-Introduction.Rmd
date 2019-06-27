@@ -1,0 +1,48 @@
+---
+title: "Introduction"
+resource_files:
+- s01.1-Introduction.Rmd
+- css/custom-learnr.css
+- images/logo_dark.png
+- images/logo.png
+runtime: shiny_prerendered
+output:
+  learnr::tutorial:
+    css: css/custom-learnr.css
+subtitle: Session 1.1
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview
+
+### Welcome to Global Health Research! 
+
+<iframe src="https://giphy.com/embed/xT9IgG50Fb7Mi0prBC" width="480" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hello-hi-wave-xT9IgG50Fb7Mi0prBC">via GIPHY</a></p>
+
+### About this course
+
+This course will introduce you to research designs and methods in global health. Global health is a multi-disciplinary field, so we will consider approaches common to the behavioral and social sciences, public health, and medicine.
+
+Our primary interest will be the study of causal inference. In global health, we are often interested in knowing what treatments, programs, interventions, and policies "work" and why. To answer questions of impact, we often turn to randomized controlled trials, a mainstay of medical research. As such, we will spend time exploring the rationale, process, and limitations of field experiments.
+
+Randomization is not always possible or advisable, however, and researchers must build a causal argument using non-experimental methods. We will review several approaches, consider relevant threats to causal inference, and discuss how to improve non-experimental research designs.
+
+Along the way, we will cover research basics, such as asking evidence-based research questions, searching the literature, developing a theory of change, identifying indicators and collecting data, selecting research participants, and testing hypotheses. In the latter part of the course, we will turn to more specialized topics in global health research, such as writing research proposals and manuscripts, economic analyses, and making an impact.
+
+## Before class
+
+Relax
+
+<iframe src="https://giphy.com/embed/yzvVXSvrg7JxC" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/happy-water-yzvVXSvrg7JxC">via GIPHY</a></p>
+
+## During class
+
+We'll review the syllabus and get to know each other.
+
+## After class
+
+Please review the syllabus and read [GHR Introduction](http://read.themethodsection.com/introduction.html){target="_blank"} and prepare for the next session.

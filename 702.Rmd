@@ -5,6 +5,7 @@ resource_files:
 - css/custom-learnr.css
 - images/logo_dark.png
 - images/logo.png
+- favicon.ico
 runtime: shiny_prerendered
 output:
   learnr::tutorial:
@@ -31,7 +32,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 This course will introduce you to research designs and methods in global health. Global health is a multi-disciplinary field, so we will consider approaches common to the behavioral and social sciences, public health, and medicine.
 
-Our primary interest will be the study of causal inference. In global health, we are often interested in knowing what treatments, programs, interventions, and policies “work” and why. To answer questions of impact, we often turn to randomized controlled trials, a mainstay of medical research. As such, we will spend time exploring the rationale, process, and limitations of field experiments.
+Our primary interest will be the study of causal inference. In global health, we are often interested in knowing what treatments, programs, interventions, and policies "work" and why. To answer questions of impact, we often turn to randomized controlled trials, a mainstay of medical research. As such, we will spend time exploring the rationale, process, and limitations of field experiments.
 
 Randomization is not always possible or advisable, however, and researchers must build a causal argument using non-experimental methods. We will review several approaches, consider relevant threats to causal inference, and discuss how to improve non-experimental research designs.
 
@@ -41,8 +42,8 @@ Along the way, we will cover research basics, such as asking evidence-based rese
 
 We have two broad goals this semester:
 
-1. to make you a better consumer of research, and
-2. to prepare you to contribute to research teams at Duke and beyond.
+1. to make you a better consumer of research; and
+2. to help you design your first study.
 
 <br>
 
@@ -59,29 +60,48 @@ The course is divided into six modules:
 
 By the end of the semester, you should be able to:
 
-* Ask a good research question
+* Describe the landscape of global health research
+* Begin developing research ideas
 * Effectively search the literature and make use of systematic reviews and meta-analyses
-* Critically appraise scientific work
-* Understand the fundamental challenge of causal inference
-* Develop a theory of change
+* Critically appraise scientific work 
+* Ask a good research question and develop study aims and hypotheses 
+* Develop a theory of change and logic model
 * Identify indicators to measure throughout the causal chain
-* Select the best method of data collection given study objectives and resources
-* Evaluate the reliability and validity of study instruments
-* Devise a sampling strategy to meet study objectives and resources
-* Design a high-powered study
+* Understand the fundamental challenge of causal inference and strategies for building a causal argument
 * Articulate the benefits and limitations of random assignment
 * Explain the logic and limitations of different quasi-experimental and observational designs that can be used when randomization is not possible or ethical
-* Write a study protocol
-* Explain how an economic analysis can put “treatment effects” in context
+* Select the best method of data collection given study objectives and resources
+* Devise a sampling strategy to meet study objectives and resources
+* Design a high-powered study
+* Describe common challenges when building research collaborations and articulate strategies for being a good collaborator
+* Understand the process of ethical review
+* Explain the benefits of open science practices to colleagues
+* Understand how scientists share their work by publishing and giving talks at conferences
 * Make a plan to promote the use of research in policymaking
 
 ### Class Format
 
 Each class session has a dedicated tutorial page that introduces the session and explains how to prepare for class. Class sessions will typically begin with a brief lecture designed to reinforce or extend pre-class learning, but the aim is to spend most of the in-class time on application activities. Activities will be based on assigned readings and will incorporate the use of tools like R/RStudio. Please review the activity before class, just as you might prepare for a lab in biology or chemistry.
 
+You: Hey, your in-class mini-lectures are the same as the videos you posted. That's lame. 
+
+Me: You don't have to watch the videos before class. We post them to help students who like repetition and to allow those who miss class to catch up.
+
+You: Can I skip class?
+
+Me: Sure, but you have to make up the in-class activity if you want the credit.
+
+You: I don't like your jokes in person or on video.
+
+Me: 
+
+<iframe src="https://giphy.com/embed/pPhyAv5t9V8djyRFJH" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wtf-obama-wth-pPhyAv5t9V8djyRFJH">via GIPHY</a></p>
+
 ### Resources
 
 The main course text is [*Global Health Research: Designs and Methods*](https://themethodsection.com/){target="_blank"}. You can read it online for free, download a PDF, or get a version for iBooks. I do not recommend reading on a mobile device unless you use the iBooks version.
+
+I encourage you to watch or listen to all of the embedded media throughout the book, but only media embedded in the main text is required. Media embedded in the margin notes is optional.
 
 ### Workload
 
@@ -100,23 +120,13 @@ Your final grade will be a weighted average of several components: application a
 **Study proposal**: Your study proposal will take the place of the final exam. Details on format and process will be provided.
 
 | Component                             | Weight |
-|:----                                   |:--:    |
+|:----                                  |:--:    |
 | In-class application activities       | 20%    |
 | Homework                              | 20%    |
 | Midterm                               | 25%    |
 | Study proposal                        | 35%    |
 
 Ranges for letter grades will be set at the end of the semester, and grades may be curved. Cumulative scores of at least 90, 80, and 70 will be guaranteed at least an A-, B-, and C-, respectively. 
-
-### Getting Help
-
-Getting help is easy. Try the following, in order of priority:
-
-1. Ask a question in class.
-2. Post a question to Piazza. This is a great platform that turns your questions and answers into public goods. We'll strive to answer every question within hours (often minutes). You can post anonymously to your peers if desired, so there really are no "dumb" questions.
-3. If you need additional help after trying #1 and #2, attend office hours or set up individual or small-group meetings. 
-
-Please limit your emails to personal matters that are not appropriate for class or Piazza. "I don't understand power calculations" is not a personal matter. Emails like this will probably go unanswered, whereas Piazza messages will be rewarded with snappy replies since they benefit everyone.
 
 ### Policies
 
@@ -128,11 +138,14 @@ Please note the following:
 * Any student with a documented disability needing academic adjustments or accommodations should speak with me during the first two weeks of class. All discussions will remain confidential. Students with disabilities will also need to contact the [Student Disability Access Office](http://www.access.duke.edu/students/requesting/index.php){target="_blank"}.
 
 
-## M1: Getting started
+## M1: Getting Started
 
-### Getting Started with Global Health Research
+By the end of this module, you should be able to:
 
-The goal of this module is to introduce you to global health research, describe the characteristics of scientific research, and preview the stages of the research process that we will explore in more depth this semester. 
+* Describe the landscape of global health research
+* Begin developing research ideas
+* Effectively search the literature and make use of systematic reviews and meta-analyses
+* Critically appraise scientific work 
 
 <br>
 
@@ -141,7 +154,7 @@ The goal of this module is to introduce you to global health research, describe 
 | Date    | Session             | 
 |:---------|:--------------------|
 | Aug 27  | [1.1 Welcome](https://try.themethodsection.com/s01-1){target="_blank"} |
-| Aug 29  | [1.2 What is global health research?](https://try.themethodsection.com/duke/s01-2){target="_blank"} |
+| Aug 29  | [1.2 Global health research](https://try.themethodsection.com/duke/s01-2){target="_blank"} |
 | Sept 3  | [1.3 Developing research ideas](){target="_blank"} |
 | Sept 5  | [1.4 Systematic reviews and meta-analyses](){target="_blank"} |
 | Sept 10 | [1.5 Critical appraisal]() |
@@ -154,11 +167,15 @@ The goal of this module is to introduce you to global health research, describe 
 |:------------------------------|:---------|
 | TBA                           | TBA      |
 
-## M2: Define your study aims
+## M2: Define Your Study Aims
 
-### Define the Aims of your Study
+By the end of this module, you should be able to:
 
-The goal of this module is to X.
+* Ask a good research question and develop study aims and hypotheses 
+* Develop a theory of change and logic model
+* Identify indicators to measure throughout the causal chain
+
+<br>
 
 #### Class Sessions
 
@@ -175,22 +192,29 @@ The goal of this module is to X.
 |:------------------------------|:---------|
 | TBA                           | TBA      |
 
-## M3: Select a research design
+## M3: Select a Research Design
 
-### Select a Research Design
+By the end of this module, you should be able to:
 
-The goal of this module is to X.
-
-<br>
+* Understand the fundamental challenge of causal inference and strategies for building a causal argument
+* Articulate the benefits and limitations of random assignment
+* Explain the logic and limitations of different quasi-experimental and observational designs that can be used when randomization is not possible or ethical
 
 #### Class Sessions
 
 | Date    | Session             | 
 |:---------|:--------------------|
+| Sept 24  | 3.1 Research designs and causal inference |
+| Sept 26  | 3.2 Experimental designs |
+| Oct 1  | 3.3 Quasi-experimental designs |
+| Oct 3  | 3.4 Observational designs |
+<!--
 | Sept 24  | [3.1 Research designs and causal inference](){target="_blank"} |
 | Sept 26  | [3.2 Experimental designs](){target="_blank"} |
 | Oct 1  | [3.3 Quasi-experimental designs](){target="_blank"} |
 | Oct 3  | [3.4 Observational designs](){target="_blank"} |
+-->
+
 
 <br>
 
@@ -204,16 +228,25 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
+| Oct 10  | Selecting a research design |
+| Oct 15  | Review |
+| Oct 17  | Midterm |
+| Oct 22  | Midterm results, introduction of final project |
+<!--
 | Oct 10  | [Selecting a research design](){target="_blank"} |
 | Oct 15  | [Review](){target="_blank"} |
 | Oct 17  | [Midterm](){target="_blank"} |
 | Oct 22  | [Midterm results, introduction of final project](){target="_blank"} |
+-->
 
-## M4: Specify your methods
 
-### Specify Your Methods
+## M4: Specify Your Methods
 
-The goal of this module is to X.
+By the end of this module, you should be able to:
+
+* Select the best method of data collection given study objectives and resources
+* Devise a sampling strategy to meet study objectives and resources
+* Design a high-powered study
 
 <br>
 
@@ -221,10 +254,17 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
+| Oct 24  | 4.1 Participants, sampling, and recruitment |
+| Oct 29  | 4.2 Sample size and analysis plans |
+| Oct 31  | 4.3 Quantitative data collection procedures |
+| Nov 5  | 4.4 Qualitative data collection procesures |
+<!--
 | Oct 24  | [4.1 Participants, sampling, and recruitment](){target="_blank"} |
 | Oct 29  | [4.2 Sample size and analysis plans](){target="_blank"} |
 | Oct 31  | [4.3 Quantitative data collection procedures](){target="_blank"} |
 | Nov 5  | [4.4 Qualitative data collection procesures](){target="_blank"} |
+-->
+
 
 <br>
 
@@ -235,11 +275,13 @@ The goal of this module is to X.
 | TBA                           | TBA      |
 
 
-## M5: Practice good science
+## M5: Practice Good Science
 
-### Practice Good Science
+By the end of this module, you should be able to:
 
-The goal of this module is to X.
+* Describe common challenges when building research collaborations and articulate strategies for being a good collaborator
+* Understand the process of ethical review
+* Explain the benefits of open science practices to colleagues
 
 <br>
 
@@ -247,9 +289,15 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
+| Nov 7  | 5.1 Collaborations |
+| Nov 12  | 5.2 Research ethics |
+| Nov 14  | 5.3 Open science |
+<!--
 | Nov 7  | [5.1 Collaborations](){target="_blank"} |
 | Nov 12  | [5.2 Research ethics](){target="_blank"} |
 | Nov 14  | [5.3 Open science](){target="_blank"} |
+-->
+
 
 <br>
 
@@ -260,11 +308,12 @@ The goal of this module is to X.
 | TBA                           | TBA      |
 
 
-## M6: Make an impact
+## M6: Make an Impact
 
-### Make an Impact with Your Work
+By the end of this module, you should be able to:
 
-The goal of this module is to X.
+* Understand how scientists share their work by publishing and giving talks at conferences
+* Make a plan to promote the use of research in policymaking
 
 <br>
 
@@ -272,8 +321,13 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
+| Nov 19  | 6.1 Sharing your work |
+| Nov 21  | 6.2 Impacting policy and practice |
+<!--
 | Nov 19  | [6.1 Sharing your work](){target="_blank"} |
 | Nov 21  | [6.2 Impacting policy and practice](){target="_blank"} |
+-->
+
 
 <br>
 
@@ -288,11 +342,36 @@ The goal of this module is to X.
 
 | Date    | Session             | 
 |:---------|:--------------------|
+| Nov 26  | Course review |
+| Dec 3  | Peer review (undergrad) |
+| Dec 5  | Proposal revisions (undergrad) |
+| TBA  | TBA |
+<!--
 | Nov 26  | [Course review](){target="_blank"} |
 | Dec 3  | [Peer review (undergrad)](){target="_blank"} |
 | Dec 5  | [Proposal revisions (undergrad)](){target="_blank"} |
 | TBA  | [TBA](){target="_blank"} |
+-->
+
 
 ## Get Help
 
-Enrolled students can access Piazza [here](https://piazza.com/duke/fall2019/glhlth702/home).
+Getting help is easy. Try the following, in order of priority:
+
+1. Ask a question in class.
+2. Post a question to Piazza. This is a great platform that turns your questions and answers into public goods. We'll strive to answer every question within hours (often minutes). You can post anonymously to your peers if desired, so there really are no "dumb" questions.
+3. If you need additional help after trying #1 and #2, attend office hours or set up individual or small-group meetings. 
+
+Please limit your emails to personal matters that are not appropriate for class or Piazza. "I don't understand power calculations" is not a personal matter. Emails like this will probably go unanswered, whereas Piazza messages will be rewarded with snappy replies since they benefit everyone.
+
+Enrolled students can access Piazza [here](https://piazza.com/duke/fall2019/glhlth702/home){target="_blank"}.
+
+## Not at Duke?
+
+**Learners**: You're welcome to use any resources you find on this site. A Coursera course is in development.
+
+**Instructors**: Please visit [themethodsection.com](https://themethodsection.com/){target="_blank"} to request access to additional resources. Course materials are shared under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+## About this Website
+
+Course materials are delivered via [`learnr`](https://rstudio.github.io/learnr/){target="_blank"} tutorials hosted on a [RStudio Connect](https://www.rstudio.com/products/connect/){target="_blank"} server hosted by Duke University. A big thanks to [RStudio](https://www.rstudio.com/){target="_blank"} for providing an academic license, and to Duke OIT for helping to setup and manage the server.
