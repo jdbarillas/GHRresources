@@ -1,15 +1,17 @@
 ---
 title: "Global Health Research"
 resource_files:
-- 702.Rmd
-- css/custom-learnr.css
-- images/logo_dark.png
-- images/logo.png
-- favicon.ico
+  - 702.Rmd
+  - css/custom-learnr.css
+  - images/logo_dark.png
+  - images/logo.png
+  - favicon.ico
 runtime: shiny_prerendered
 output:
   learnr::tutorial:
-    css: css/custom-learnr.css
+    includes:
+      in_header: css/style.html
+      after_body: js/after_body.html
 subtitle: GLHLTH 702, Duke University
 ---
 
