@@ -1,0 +1,3293 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+<meta name="progressive" content="false" />
+<meta name="allow-skip" content="false" />
+
+<title>Global Health Research</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+/* colors */
+/* timing */
+/* sizes */
+body, button, input, textarea {
+  font-family: 'Source Sans', sans-serif;
+  font-weight: normal; }
+
+/* content */
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: 300; }
+
+h1 {
+  font-size: 2.4em;
+  margin: .75em 0 .5em 0; }
+
+h2 {
+  font-size: 2.0em;
+  margin: .75em 0 .5em 0; }
+
+h3 {
+  font-size: 1.6em;
+  margin: .75em 0 .5em 0; }
+
+h4 {
+  font-size: 1.2em;
+  margin: .75em 0 .5em 0; }
+
+p {
+  line-height: 1.6em;
+  margin-bottom: 1em; }
+
+ul {
+  line-height: 2em;
+  list-style: disc outside none; }
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 3px; 
+  margin-bottom: 20px; }
+
+.btn-xs, .btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 0.9em;
+  line-height: 1.6em; }
+
+.btn-default {
+  background-color: #e0e0e0;
+  background-image: none;
+  border: none; }
+  .btn-default:hover {
+    background-color: #c8c8c8; 
+  }
+  .btn-default:focus {
+    background-color: #e0e0e0; 
+  }
+
+/* TODO-barret add css for btn-warning */
+
+.btn-primary, .btn-success, .btn-info {
+  background-color: #75aadb;
+  background-image: none;
+  border: none; 
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:focus:active, .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success:focus:active, .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info:focus:active {
+    background-color: #5a9ddb; 
+  }
+.btn-primary:focus:hover, .btn-primary:active:hover, .btn-primary:focus:active:hover, .btn-success:focus:hover, .btn-success:active:hover, .btn-success:focus:active:hover, .btn-info:focus:hover, .btn-info:active:hover, .btn-info:focus:active:hover {
+    background-color: #4c83b6; 
+  }
+.btn-primary.disabled, .btn-primary:disabled, .btn-primary.disabled:hover, .btn-primary:disabled:hover, .btn-success.disabled, .btn-success:disabled, .btn-success.disabled:hover, .btn-success:disabled:hover, .btn-info.disabled, .btn-info:disabled, .btn-info.disabled:hover, .btn-info:disabled:hover {
+    background-color: #75aadb; 
+  }
+
+.panel, pre {
+  border-radius: 0;
+  border-color: #e0e0e0; 
+}
+
+code {
+  color: darkslategray;
+}
+
+
+
+
+
+/* quiz css */
+
+.questions {
+  padding: 8px;
+  margin-bottom: 0;
+}
+
+.questions h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+.alert {
+  width: fit-content;
+}
+
+/* .answers {
+  padding-left: 25px;
+  margin-bottom: 15px;
+} */
+
+/* .answers label {
+  font-weight: 400;
+  margin-left: 4px;
+} */
+
+/* .responses {
+  padding-left: 0;
+} */
+
+/* .answers .checked::after {
+  content: " \2713 ";
+} */
+/* .answers .invalid::after {
+  content: " \1F5F4 ";
+} */
+
+/* .responses .alert {
+  padding: 6px 12px;
+  margin-bottom: 0;
+} */
+
+/* .quiz-table .panel {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+} */
+
+/* .quiz-table > tbody > tr > td {
+  padding: 0;
+} */
+
+/* .quiz .panel-body {
+  padding: 10px;
+} */
+
+/* .checkAnswer i {
+  margin-right: 8px;
+} */
+
+/* .tryAgainButton {
+  margin-top: 10px;
+} */
+
+</style>
+
+<style>
+  
+.pageContent {
+}
+
+.band {
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+
+.bandContent {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.bandContent.page {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+}
+
+.topics {
+  width: 75%;
+  overflow-x: auto;
+  padding-bottom: 600px;
+}
+
+.topics .tutorialTitle {
+  display: none;
+  border-bottom: 3px dotted #f0f0f0;
+}
+
+.topics .section.level2 {
+  display: none;
+  margin-bottom: 40px;
+}
+
+.topics .section.level2.current {
+  display: block;
+}
+
+.topicsContainer {
+  width: 23%;
+  min-width: 270px;
+  margin-right: 2%;
+  z-index: 100;
+}
+
+.topicsPositioner {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background-color: pink;
+}
+
+.topicsList {
+  float: left;
+  position: relative;
+  width: 23%;
+  min-width: 270px;
+  overflow: auto;
+  height: auto;
+  scroll-behavior: smooth;
+  transform: translateZ(0); /* force repaint to work on older browser used in the IDE */
+}
+
+.topicsHeader {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.topicsFooter {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.topicsFooter .resetButton {
+  padding-left: 10px;
+  font-size: .66em;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.topicsFooter .resetButton:hover {
+  opacity: 1;
+}
+
+.topicsList .topic {
+  line-height: 40px;
+  font-size: 15px;
+  padding-left: 10px;
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-size: 2px 80px;
+  background-position: left 100%;
+  background-image: url(images/topicProgress.png);
+  border-bottom: 1px solid #f8f8f8;
+
+  -webkit-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.topicsList .topic:hover {
+  background-color: #fcfcfc;
+}
+
+.topicsList .topic.current {
+  background-color: #f8f8f8;
+}
+
+.section.level3 {
+  margin-bottom: 40px;
+}
+
+.paneCloser {
+  display: none;
+  height: 30px;
+  width: 30px;
+  background: url(images/close.svg) no-repeat center center;
+  background-size: 30px 30px;
+  border-radius: 15px;
+  position: relative;
+  top: 8px;
+}
+
+.paneCloser:hover {
+  background-color: rgba( 0, 0, 0, .05);
+}
+
+.section.level3.hide {
+  display: none;
+}
+
+.section.level3.done h3 {
+  padding-left: 25px;
+  background-image: url(images/exerciseDone.svg);
+  background-size: 20px 20px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.exerciseActions {
+  margin: 20px 0;
+}
+
+.skip {
+  display: none;
+}
+
+.showSkip .skip {
+  display: inline-block;
+}
+
+.topicActions {
+  margin-top: 20px;
+}
+
+.topicActions button {
+  margin-right: 10px;
+}
+
+.section.level2.hideActions .topicActions {
+  display: none;
+}
+
+#doc-metadata {
+  margin-bottom: 10px;
+  line-height: 1.6em;
+}
+
+#doc-metadata h3 {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+#doc-metadata h4 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+#doc-metadata em {
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .topics {
+    width: 99%;
+  }
+
+  .topics .tutorialTitle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .topicsContainer {
+    width: 1%;
+    min-width: 1px;
+    margin-right: 0;
+  }
+
+  .topicsList {
+    padding: 0px 10px 20px 1%;
+    background-color: rgba(255, 255, 255, 0.98);
+
+    box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .topicsList.hideFloating {
+    display: none;
+  }
+
+  .paneCloser {
+    display: inline-block;
+  }
+}
+
+</style>
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:light,bold,lightitalic');
+  @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:thin,extra-light,light,regular,bold');
+
+body {
+  font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: large;
+  color: black;
+}
+
+.topics h2 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: bold;
+  color: #1f9ac9;
+}
+
+.topics h2:after {
+  display: block;
+  margin: 10px 0 0 0;
+  height: 2px;
+  content: " ";
+  text-shadow: none;
+  background-color: #1f9ac9;
+    /*width: 140px;*/
+}
+
+.topics h3 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #e69138;
+    font-weight: bold;
+}
+
+.topics h4 {
+  font-family: "Source Sans Pro", Arial;
+  color: grey;
+  font-weight: bold;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:focus:active, .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success:focus:active, .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info:focus:active {
+  background-color: #e69138;
+}
+
+.btn-primary, .btn-success, .btn-info {
+  background-color: #1f9ac9;
+    background-image: none;
+  border: none;
+}
+
+.topicsList:after {
+  text-align: center;
+  content: "\A  Eric P. Green\A themethodsection.com";
+  display: block;
+  white-space: pre-wrap;
+  padding-top: 30px;
+}
+
+.topicsList {
+  padding-right: 25px;
+}
+
+.topicsHeader {
+  margin-top: 15px;
+  display: block;
+}
+
+.topicsHeader:before {
+  content: url(./images/logo.png);
+}
+
+.tutorialTitle {
+  padding-top: 1em;
+  margin-bottom: 0;
+  font-size: larger;
+  font-weight: bold;
+  color: #1f9ac9;;
+}
+
+#doc-metadata > h3 {
+padding-top: 0;
+font-size: large;
+font-weight: 300;
+color: black;
+}
+
+div.topic.current {
+  background-color: #1f9ac9 !important;
+  font-weight: bold;
+  color: white;
+}
+
+</style>
+
+<!-- highlightjs -->
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+
+
+<div class="pageContent band">
+<div class="bandContent page">
+
+<div class="topics">
+
+<div id="section-syllabus" class="section level2">
+<h2>Syllabus</h2>
+<div id="section-fall-2019" class="section level3">
+<h3>Fall 2019</h3>
+</div>
+<div id="section-instructional-team" class="section level3">
+<h3>Instructional Team</h3>
+<p><strong>Instructor</strong>: <a href="https://globalhealth.duke.edu/people/faculty/green-eric" target="_blank">Eric Green, Ph.D.</a>, Duke University</p>
+<p><strong>Teaching Assistant</strong>: TBA</p>
+</div>
+<div id="section-overview" class="section level3">
+<h3>Overview</h3>
+<p>This course will introduce you to research designs and methods in global health. Global health is a multi-disciplinary field, so we will consider approaches common to the behavioral and social sciences, public health, and medicine.</p>
+<p>Our primary interest will be the study of causal inference. In global health, we are often interested in knowing what treatments, programs, interventions, and policies “work” and why. To answer questions of impact, we often turn to randomized controlled trials, a mainstay of medical research. As such, we will spend time exploring the rationale, process, and limitations of field experiments.</p>
+<p>Randomization is not always possible or advisable, however, and researchers must build a causal argument using non-experimental methods. We will review several approaches, consider relevant threats to causal inference, and discuss how to improve non-experimental research designs.</p>
+<p>Along the way, we will cover research basics, such as asking evidence-based research questions, searching the literature, developing a theory of change, identifying indicators and collecting data, selecting research participants, and testing hypotheses. In the latter part of the course, we will turn to more specialized topics in global health research, such as writing research proposals and manuscripts, economic analyses, and making an impact.</p>
+</div>
+<div id="section-course-goals-and-learning-objectives" class="section level3">
+<h3>Course Goals and Learning Objectives</h3>
+<p>We have two broad goals this semester:</p>
+<ol style="list-style-type: decimal">
+<li>to make you a better consumer of research; and</li>
+<li>to help you design your first study.</li>
+</ol>
+<p><br></p>
+<p>The course is divided into six modules:</p>
+<ol style="list-style-type: decimal">
+<li>Getting started with global health research</li>
+<li>Define your study aims</li>
+<li>Select a research design</li>
+<li>Specify your methods</li>
+<li>Practice good science</li>
+<li>Make an impact with your work</li>
+</ol>
+<p><br></p>
+<p>By the end of the semester, you should be able to:</p>
+<ul>
+<li>Describe the landscape of global health research</li>
+<li>Begin developing research ideas</li>
+<li>Effectively search the literature and make use of systematic reviews and meta-analyses</li>
+<li>Critically appraise scientific work</li>
+<li>Ask a good research question and develop study aims and hypotheses</li>
+<li>Develop a theory of change and logic model</li>
+<li>Identify indicators to measure throughout the causal chain</li>
+<li>Understand the fundamental challenge of causal inference and strategies for building a causal argument</li>
+<li>Articulate the benefits and limitations of random assignment</li>
+<li>Explain the logic and limitations of different quasi-experimental and observational designs that can be used when randomization is not possible or ethical</li>
+<li>Select the best method of data collection given study objectives and resources</li>
+<li>Devise a sampling strategy to meet study objectives and resources</li>
+<li>Design a high-powered study</li>
+<li>Describe common challenges when building research collaborations and articulate strategies for being a good collaborator</li>
+<li>Understand the process of ethical review</li>
+<li>Explain the benefits of open science practices to colleagues</li>
+<li>Understand how scientists share their work by publishing and giving talks at conferences</li>
+<li>Make a plan to promote the use of research in policymaking</li>
+</ul>
+</div>
+<div id="section-class-format" class="section level3">
+<h3>Class Format</h3>
+<p>Each class session has a dedicated tutorial page that introduces the session and explains how to prepare for class. Class sessions will typically begin with a brief lecture designed to reinforce or extend pre-class learning, but the aim is to spend most of the in-class time on application activities. Activities will be based on assigned readings and will incorporate the use of tools like R/RStudio. Please review the activity before class, just as you might prepare for a lab in biology or chemistry.</p>
+<p>You: Hey, your in-class mini-lectures are the same as the videos you posted. That’s lame.</p>
+<p>Me: You don’t have to watch the videos before class. We post them to help students who like repetition and to allow those who miss class to catch up.</p>
+<p>You: Can I skip class?</p>
+<p>Me: Sure, but you have to make up the in-class activity if you want the credit.</p>
+<p>You: I don’t like your jokes in person or on video.</p>
+<p>Me:</p>
+<iframe src="https://giphy.com/embed/pPhyAv5t9V8djyRFJH" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen>
+</iframe>
+<p>
+<a href="https://giphy.com/gifs/wtf-obama-wth-pPhyAv5t9V8djyRFJH">via GIPHY</a>
+</p>
+</div>
+<div id="section-resources" class="section level3">
+<h3>Resources</h3>
+<p>The main course text is <a href="https://themethodsection.com/" target="_blank"><em>Global Health Research: Designs and Methods</em></a>. You can read it online for free, download a PDF, or get a version for iBooks. I do not recommend reading on a mobile device unless you use the iBooks version.</p>
+<p>I encourage you to watch or listen to all of the embedded media throughout the book, but only media embedded in the main text is required. Media embedded in the margin notes is optional.</p>
+</div>
+<div id="section-workload" class="section level3">
+<h3>Workload</h3>
+<p>A reasonable rule of thumb is somewhere between 2:1 and 3:1 out-of-class to in-class hours. At the upper end, this is about 100 hours of outside class time this semester.</p>
+</div>
+<div id="section-evaluation" class="section level3">
+<h3>Evaluation</h3>
+<p>Your final grade will be a weighted average of several components: application activities, homework, a midterm exam, and a study proposal.</p>
+<p><strong>In-class application activities</strong>: Short activities designed to be completed in class in groups of 2-3. Pass/fail.</p>
+<p><strong>Homework</strong>: Assignments generally due one week after the end of the module.</p>
+<p><strong>Midterm</strong>: There will be an in-class midterm exam. Multiple-choice, fill-in-the-blank, and short answer questions.</p>
+<p><strong>Study proposal</strong>: Your study proposal will take the place of the final exam. Details on format and process will be provided.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Component</th>
+<th align="center">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">In-class application activities</td>
+<td align="center">20%</td>
+</tr>
+<tr class="even">
+<td align="left">Homework</td>
+<td align="center">20%</td>
+</tr>
+<tr class="odd">
+<td align="left">Midterm</td>
+<td align="center">25%</td>
+</tr>
+<tr class="even">
+<td align="left">Study proposal</td>
+<td align="center">35%</td>
+</tr>
+</tbody>
+</table>
+<p>Ranges for letter grades will be set at the end of the semester, and grades may be curved. Cumulative scores of at least 90, 80, and 70 will be guaranteed at least an A-, B-, and C-, respectively.</p>
+</div>
+<div id="section-policies" class="section level3">
+<h3>Policies</h3>
+<p>Please note the following:</p>
+<ul>
+<li>If you miss an in-class <strong>application activity</strong>, you will have until the start of the next class to contact the TA and submit your completed work. After this time, you will receive a score of 0 unless you have permission to follow a different schedule. <a href="https://trinity.duke.edu/undergraduate/academic-policies/class-attendance-and-missed-work" target="_blank">See here</a> for more details about Duke’s policies regarding class attendance and missed work.</li>
+<li><strong>Homework</strong> will be due at the start of class on the date indicated on the schedule. Late submissions will penalized 5 percentage points. For every 24 hours late after the missed deadline, an additional 5 percentage points will be deducted from the score.</li>
+<li>Students should abide by the <a href="https://studentaffairs.duke.edu/conduct/about-us/duke-community-standard" target="_blank">Duke Community Standard</a> at all times. If a questionable circumstance arises, do not hesitate to seek my guidance (before is always better than after).</li>
+<li>Any student with a documented disability needing academic adjustments or accommodations should speak with me during the first two weeks of class. All discussions will remain confidential. Students with disabilities will also need to contact the <a href="http://www.access.duke.edu/students/requesting/index.php" target="_blank">Student Disability Access Office</a>.</li>
+</ul>
+</div>
+</div>
+<div id="section-m1-getting-started" class="section level2">
+<h2>M1: Getting Started</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Describe the landscape of global health research</li>
+<li>Begin developing research ideas</li>
+<li>Effectively search the literature and make use of systematic reviews and meta-analyses</li>
+<li>Critically appraise scientific work</li>
+</ul>
+<p><br></p>
+<div id="section-class-sessions" class="section level4">
+<h4>Class Sessions</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Aug 27</td>
+<td align="left"><a href="https://try.themethodsection.com/s01-1" target="_blank">1.1 Welcome</a></td>
+</tr>
+<tr class="even">
+<td align="left">Aug 29</td>
+<td align="left"><a href="https://try.themethodsection.com/duke/s01-2" target="_blank">1.2 Global health research</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Sept 3</td>
+<td align="left"><a href="" target="_blank">1.3 Developing research ideas</a></td>
+</tr>
+<tr class="even">
+<td align="left">Sept 5</td>
+<td align="left"><a href="" target="_blank">1.4 Systematic reviews and meta-analyses</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Sept 10</td>
+<td align="left"><a href="">1.5 Critical appraisal</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="section-homework" class="section level4">
+<h4>Homework</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="section-m2-define-your-study-aims" class="section level2">
+<h2>M2: Define Your Study Aims</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Ask a good research question and develop study aims and hypotheses</li>
+<li>Develop a theory of change and logic model</li>
+<li>Identify indicators to measure throughout the causal chain</li>
+</ul>
+<p><br></p>
+<div id="section-class-sessions-1" class="section level4">
+<h4>Class Sessions</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Sept 12</td>
+<td align="left"><a href="" target="_blank">2.1 Research questions and aims</a></td>
+</tr>
+<tr class="even">
+<td align="left">Sept 17</td>
+<td align="left"><a href="" target="_blank">2.2 The role of theory</a></td>
+</tr>
+<tr class="odd">
+<td align="left">Sept 19</td>
+<td align="left"><a href="" target="_blank">2.3 Outcomes and indicators</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section-homework-1" class="section level4">
+<h4>Homework</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="section-m3-select-a-research-design" class="section level2">
+<h2>M3: Select a Research Design</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Understand the fundamental challenge of causal inference and strategies for building a causal argument</li>
+<li>Articulate the benefits and limitations of random assignment</li>
+<li>Explain the logic and limitations of different quasi-experimental and observational designs that can be used when randomization is not possible or ethical</li>
+</ul>
+<div id="section-class-sessions-2" class="section level4">
+<h4>Class Sessions</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Sept 24</td>
+<td align="left">3.1 Research designs and causal inference</td>
+</tr>
+<tr class="even">
+<td align="left">Sept 26</td>
+<td align="left">3.2 Experimental designs</td>
+</tr>
+<tr class="odd">
+<td align="left">Oct 1</td>
+<td align="left">3.3 Quasi-experimental designs</td>
+</tr>
+<tr class="even">
+<td align="left">Oct 3</td>
+<td align="left">3.4 Observational designs</td>
+</tr>
+</tbody>
+</table>
+<!--
+| Sept 24  | [3.1 Research designs and causal inference](){target="_blank"} |
+| Sept 26  | [3.2 Experimental designs](){target="_blank"} |
+| Oct 1  | [3.3 Quasi-experimental designs](){target="_blank"} |
+| Oct 3  | [3.4 Observational designs](){target="_blank"} |
+-->
+<p><br></p>
+</div>
+<div id="section-homework-2" class="section level4">
+<h4>Homework</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="section-midterm" class="section level2">
+<h2>Midterm</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Oct 10</td>
+<td align="left">Selecting a research design</td>
+</tr>
+<tr class="even">
+<td align="left">Oct 15</td>
+<td align="left">Review</td>
+</tr>
+<tr class="odd">
+<td align="left">Oct 17</td>
+<td align="left">Midterm</td>
+</tr>
+<tr class="even">
+<td align="left">Oct 22</td>
+<td align="left">Midterm results, introduction of final project</td>
+</tr>
+</tbody>
+</table>
+<!--
+| Oct 10  | [Selecting a research design](){target="_blank"} |
+| Oct 15  | [Review](){target="_blank"} |
+| Oct 17  | [Midterm](){target="_blank"} |
+| Oct 22  | [Midterm results, introduction of final project](){target="_blank"} |
+-->
+</div>
+<div id="section-m4-specify-your-methods" class="section level2">
+<h2>M4: Specify Your Methods</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Select the best method of data collection given study objectives and resources</li>
+<li>Devise a sampling strategy to meet study objectives and resources</li>
+<li>Design a high-powered study</li>
+</ul>
+<p><br></p>
+<div id="section-class-sessions-3" class="section level4">
+<h4>Class Sessions</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Oct 24</td>
+<td align="left">4.1 Participants, sampling, and recruitment</td>
+</tr>
+<tr class="even">
+<td align="left">Oct 29</td>
+<td align="left">4.2 Sample size and analysis plans</td>
+</tr>
+<tr class="odd">
+<td align="left">Oct 31</td>
+<td align="left">4.3 Quantitative data collection procedures</td>
+</tr>
+<tr class="even">
+<td align="left">Nov 5</td>
+<td align="left">4.4 Qualitative data collection procesures</td>
+</tr>
+</tbody>
+</table>
+<!--
+| Oct 24  | [4.1 Participants, sampling, and recruitment](){target="_blank"} |
+| Oct 29  | [4.2 Sample size and analysis plans](){target="_blank"} |
+| Oct 31  | [4.3 Quantitative data collection procedures](){target="_blank"} |
+| Nov 5  | [4.4 Qualitative data collection procesures](){target="_blank"} |
+-->
+<p><br></p>
+</div>
+<div id="section-homework-3" class="section level4">
+<h4>Homework</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="section-m5-practice-good-science" class="section level2">
+<h2>M5: Practice Good Science</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Describe common challenges when building research collaborations and articulate strategies for being a good collaborator</li>
+<li>Understand the process of ethical review</li>
+<li>Explain the benefits of open science practices to colleagues</li>
+</ul>
+<p><br></p>
+<div id="section-class-sessions-4" class="section level4">
+<h4>Class Sessions</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Nov 7</td>
+<td align="left">5.1 Collaborations</td>
+</tr>
+<tr class="even">
+<td align="left">Nov 12</td>
+<td align="left">5.2 Research ethics</td>
+</tr>
+<tr class="odd">
+<td align="left">Nov 14</td>
+<td align="left">5.3 Open science</td>
+</tr>
+</tbody>
+</table>
+<!--
+| Nov 7  | [5.1 Collaborations](){target="_blank"} |
+| Nov 12  | [5.2 Research ethics](){target="_blank"} |
+| Nov 14  | [5.3 Open science](){target="_blank"} |
+-->
+<p><br></p>
+</div>
+<div id="section-homework-4" class="section level4">
+<h4>Homework</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="section-m6-make-an-impact" class="section level2">
+<h2>M6: Make an Impact</h2>
+<p>By the end of this module, you should be able to:</p>
+<ul>
+<li>Understand how scientists share their work by publishing and giving talks at conferences</li>
+<li>Make a plan to promote the use of research in policymaking</li>
+</ul>
+<p><br></p>
+<div id="section-class-sessions-5" class="section level4">
+<h4>Class Sessions</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Nov 19</td>
+<td align="left">6.1 Sharing your work</td>
+</tr>
+<tr class="even">
+<td align="left">Nov 21</td>
+<td align="left">6.2 Impacting policy and practice</td>
+</tr>
+</tbody>
+</table>
+<!--
+| Nov 19  | [6.1 Sharing your work](){target="_blank"} |
+| Nov 21  | [6.2 Impacting policy and practice](){target="_blank"} |
+-->
+<p><br></p>
+</div>
+<div id="section-homework-5" class="section level4">
+<h4>Homework</h4>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Assignment</th>
+<th align="left">Due Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="section-final-project" class="section level2">
+<h2>Final Project</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Session</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Nov 26</td>
+<td align="left">Course review</td>
+</tr>
+<tr class="even">
+<td align="left">Dec 3</td>
+<td align="left">Peer review (undergrad)</td>
+</tr>
+<tr class="odd">
+<td align="left">Dec 5</td>
+<td align="left">Proposal revisions (undergrad)</td>
+</tr>
+<tr class="even">
+<td align="left">TBA</td>
+<td align="left">TBA</td>
+</tr>
+</tbody>
+</table>
+<!--
+| Nov 26  | [Course review](){target="_blank"} |
+| Dec 3  | [Peer review (undergrad)](){target="_blank"} |
+| Dec 5  | [Proposal revisions (undergrad)](){target="_blank"} |
+| TBA  | [TBA](){target="_blank"} |
+-->
+</div>
+<div id="section-get-help" class="section level2">
+<h2>Get Help</h2>
+<p>Getting help is easy. Try the following, in order of priority:</p>
+<ol style="list-style-type: decimal">
+<li>Ask a question in class.</li>
+<li>Post a question to Piazza. This is a great platform that turns your questions and answers into public goods. We’ll strive to answer every question within hours (often minutes). You can post anonymously to your peers if desired, so there really are no “dumb” questions.</li>
+<li>If you need additional help after trying #1 and #2, attend office hours or set up individual or small-group meetings.</li>
+</ol>
+<p>Please limit your emails to personal matters that are not appropriate for class or Piazza. “I don’t understand power calculations” is not a personal matter. Emails like this will probably go unanswered, whereas Piazza messages will be rewarded with snappy replies since they benefit everyone.</p>
+<p>Enrolled students can access Piazza <a href="https://piazza.com/duke/fall2019/glhlth702/home" target="_blank">here</a>.</p>
+</div>
+<div id="section-not-at-duke" class="section level2">
+<h2>Not at Duke?</h2>
+<p><strong>Learners</strong>: You’re welcome to use any resources you find on this site. A Coursera course is in development.</p>
+<p><strong>Instructors</strong>: Please visit <a href="https://themethodsection.com/" target="_blank">themethodsection.com</a> to request access to additional resources. Course materials are shared under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.</p>
+</div>
+<div id="section-about-this-website" class="section level2">
+<h2>About this Website</h2>
+Course materials are delivered via <a href="https://rstudio.github.io/learnr/" target="_blank"><code>learnr</code></a> tutorials hosted on a <a href="https://www.rstudio.com/products/connect/" target="_blank">RStudio Connect</a> server hosted by Duke University. A big thanks to <a href="https://www.rstudio.com/" target="_blank">RStudio</a> for providing an academic license, and to Duke OIT for helping to setup and manage the server. 
+<script type="application/shiny-prerendered" data-context="server-start">
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+</script>
+ <!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="dependencies">
+{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["jquery"]},{"type":"character","attributes":{},"value":["1.11.3"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/jquery"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["jquery.min.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.13"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["bootstrap"]},{"type":"character","attributes":{},"value":["3.3.5"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/bootstrap"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["viewport"]}},"value":[{"type":"character","attributes":{},"value":["width=device-width, initial-scale=1"]}]},{"type":"character","attributes":{},"value":["js/bootstrap.min.js","shim/html5shiv.min.js","shim/respond.min.js"]},{"type":"character","attributes":{},"value":["css/cerulean.min.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.13"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["pagedtable"]},{"type":"character","attributes":{},"value":["1.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/pagedtable-1.1"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["js/pagedtable.js"]},{"type":"character","attributes":{},"value":["css/pagedtable.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.13"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["highlightjs"]},{"type":"character","attributes":{},"value":["9.12.0"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmd/h/highlightjs"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["highlight.js"]},{"type":"character","attributes":{},"value":["textmate.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["rmarkdown"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["1.13"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial"]},{"type":"character","attributes":{},"value":["0.9.2.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/tutorial"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial.js"]},{"type":"character","attributes":{},"value":["tutorial.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.9.2.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial-autocompletion"]},{"type":"character","attributes":{},"value":["0.9.2.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/tutorial"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial-autocompletion.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.9.2.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial-diagnostics"]},{"type":"character","attributes":{},"value":["0.9.2.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["lib/tutorial"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial-diagnostics.js"]},{"type":"NULL"},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.9.2.1"]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","version","src","meta","script","stylesheet","head","attachment","package","all_files","pkgVersion"]},"class":{"type":"character","attributes":{},"value":["html_dependency"]}},"value":[{"type":"character","attributes":{},"value":["tutorial-format"]},{"type":"character","attributes":{},"value":["0.9.2.1"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["file"]}},"value":[{"type":"character","attributes":{},"value":["rmarkdown/templates/tutorial/resources"]}]},{"type":"NULL"},{"type":"character","attributes":{},"value":["tutorial-format.js"]},{"type":"character","attributes":{},"value":["tutorial-format.css","rstudio-theme.css"]},{"type":"NULL"},{"type":"NULL"},{"type":"character","attributes":{},"value":["learnr"]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["0.9.2.1"]}]}]}
+</script>
+<!--/html_preserve-->
+<!--html_preserve-->
+<script type="application/shiny-prerendered" data-context="execution_dependencies">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["packages","version"]},"class":{"type":"character","attributes":{},"value":["data.frame"]},"row.names":{"type":"integer","attributes":{},"value":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34]}},"value":[{"type":"character","attributes":{},"value":["backports","base","compiler","datasets","digest","evaluate","graphics","grDevices","htmltools","htmlwidgets","httpuv","jsonlite","knitr","later","learnr","magrittr","markdown","methods","mime","promises","R6","Rcpp","rmarkdown","rprojroot","shiny","stats","stringi","stringr","tools","utils","withr","xfun","xtable","yaml"]},{"type":"character","attributes":{},"value":["1.1.4","3.6.0","3.6.0","3.6.0","0.6.19","0.14","3.6.0","3.6.0","0.3.6","1.3","1.5.1","1.6","1.23","0.8.0","0.9.2.1","1.5","1.0","3.6.0","0.7","1.0.1","2.4.0","1.0.1","1.13","1.3-2","1.3.2","3.6.0","1.4.3","1.4.0","3.6.0","3.6.0","2.1.2","0.7","1.8-4","2.2.0"]}]}]}
+</script>
+<!--/html_preserve-->
+</div>
+
+</div> <!-- topics -->
+
+<div class="topicsContainer">
+<div class="topicsPositioner">
+<div class="band">
+<div class="bandContent topicsListContainer">
+
+<!-- begin doc-metadata -->
+<div id="doc-metadata">
+<h2 class="title toc-ignore" style="display:none;">Global Health Research</h2>
+<h3 class="subtitle"><em>GLHLTH 702, Duke University</em></h3>
+</div>
+<!-- end doc-metadata -->
+
+</div> <!-- bandContent.topicsListContainer -->
+</div> <!-- band -->
+</div> <!-- topicsPositioner -->
+</div> <!-- topicsContainer -->
+
+
+</div> <!-- bandContent page -->
+</div> <!-- pageContent band -->
+
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
+
+
+<script>
+/* Tutorial construction and initialization */
+
+$(document).ready(function() {
+  var tutorial = new Tutorial();
+
+  // register autocompletion if available
+  if (typeof TutorialCompleter !== "undefined")
+    tutorial.$completer = new TutorialCompleter(tutorial);
+
+  // register diagnostics if available
+  if (typeof TutorialDiagnostics !== "undefined")
+    tutorial.$diagnostics = new TutorialDiagnostics(tutorial);
+
+  window.tutorial = tutorial;
+});
+
+// this var lets us know if the Shiny server is ready to handle http requests
+var tutorial_isServerAvailable = true;
+
+function Tutorial() {
+  
+  // Alias this
+  var thiz = this;
+  
+  // Init timing log
+  this.$initTimingLog();
+  
+  // API: provide init event
+  this.onInit = function(handler) {
+    this.$initCallbacks.add(handler);
+  };
+  
+  // API: provide progress events
+  this.onProgress = function(handler) {
+    this.$progressCallbacks.add(handler);
+  };
+  
+  
+  // API: Start the tutorial over
+  this.startOver = function() {
+    thiz.$removeState(function() {
+      thiz.$serverRequest("remove_state", null, function() {
+        window.location.replace(window.location.origin + window.location.pathname);
+      });
+    });
+  };
+  
+  // API: Skip a section
+  this.skipSection = function(sectionId) {
+    // wait for shiny config to be available (required for $serverRequest)
+    if (tutorial_isServerAvailable)
+      thiz.$serverRequest("section_skipped", { sectionId: sectionId }, null);
+  };
+  
+  // API: scroll an element into view
+  this.scrollIntoView = function(element) {
+    element = $(element);
+    var rect = element[0].getBoundingClientRect();
+    if (rect.top < 0 || rect.bottom > $(window).height()) {
+      if (element[0].scrollIntoView) {
+        element[0].scrollIntoView(false);
+        document.body.scrollTop += 20;
+      }  
+    }
+};
+  
+  // Initialization
+  thiz.$initializeVideos();  
+  thiz.$initializeExercises();
+  thiz.$initializeServer();
+}
+
+/* Utilities */
+
+Tutorial.prototype.$initTimingLog = function() {
+  try {
+    if (performance.mark !== undefined) {
+      performance.mark("tutorial-start-mark");
+    }
+  } catch(e) {
+    console.log("Error initializing log timing: " + e.message);
+  }
+};
+
+Tutorial.prototype.$logTiming = function(name) {
+  try {
+    if (performance.mark !== undefined && 
+        performance.measure !== undefined &&
+        performance.getEntriesByName !== undefined &&
+        this.queryVar('log-timings') === '1') {
+      performance.mark(name + "-mark");
+      performance.measure(name, "tutorial-start-mark", name + "-mark");
+      var entries = performance.getEntriesByName(name);
+      console.log("(Timing) " + name + ": " + Math.round(entries[0].duration) + "ms");
+    }
+  } catch(e) {
+    console.log("Error logging timing: " + e.message);
+  }
+};
+
+Tutorial.prototype.queryVar = function(name) {
+  return decodeURI(window.location.search.replace(
+    new RegExp("^(?:.*[&\\?]" +
+               encodeURI(name).replace(/[\.\+\*]/g, "\\$&") +
+               "(?:\\=([^&]*))?)?.*$", "i"),
+    "$1"));
+};
+
+Tutorial.prototype.$idSelector = function(id) {
+  return "#" + id.replace( /(:|\.|\[|\]|,|=|@)/g, "\\$1" );
+};
+
+
+/* Init callbacks */
+Tutorial.prototype.$initCallbacks = $.Callbacks();
+
+Tutorial.prototype.$fireInit = function() {
+  
+  // Alias this
+  var thiz = this;
+  
+  // fire event
+  try {
+    thiz.$initCallbacks.fire();
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+/* Progress callbacks */
+
+Tutorial.prototype.$progressCallbacks = $.Callbacks();
+
+Tutorial.prototype.$progressEvents = [];
+
+Tutorial.prototype.$hasCompletedProgressEvent = function(element) {
+  var thiz = this;
+  for (var e = 0; e<thiz.$progressEvents.length; e++) {
+    var event = thiz.$progressEvents[e];
+    if ($(event.element).is($(element))) {
+      if (event.completed)
+        return true;
+    }
+  }
+  return false;
+};
+  
+Tutorial.prototype.$fireProgress = function(event) {
+  
+  // record it
+  this.$progressEvents.push(event);
+
+  // fire event
+  try {
+    this.$progressCallbacks.fire(event);
+  } catch (e) {
+    console.log(e);
+  }
+};
+  
+Tutorial.prototype.$fireSectionCompleted = function(element) {
+  
+  // Alias this
+  var thiz = this;
+  
+  // helper function to fire section completed
+  function fireCompleted(el) {
+    var event = {
+      element: el,
+      event: "section_completed"
+    };
+    thiz.$fireProgress(event);
+  }
+  
+  // find closest containing section (bail if there is none)
+  var section = $(element).parent().closest('.section');
+  if (section.length === 0)
+    return;
+  
+  // get all interactive components in the section
+  var components = section.find('.tutorial-exercise, .tutorial-question, .tutorial-video');
+  
+  // are they all completed?
+  var allCompleted = true;
+  for (var c = 0; c<components.length; c++) {
+    var component = components.get(c);
+    if (!thiz.$hasCompletedProgressEvent(component)) {
+      allCompleted = false;
+      break;
+    }
+  }
+
+  // if they are then fire event
+  if (allCompleted) {
+  
+    // fire the event
+    fireCompleted($(section).get(0));
+   
+    // fire for preceding siblings if they have no interactive components
+    var previousSections = section.prevAll('.section');
+    previousSections.each(function() {
+      var components = $(this).find('.tutorial-exercise, .tutorial-question');
+      if (components.length === 0)
+        fireCompleted(this);
+    });
+    
+    // if there is another section above us then process it
+    var parentSection = section.parent().closest('.section');
+    if (parentSection.length > 0) 
+      this.$fireSectionCompleted(section);
+  }
+}; 
+
+Tutorial.prototype.$removeConflictingProgressEvents = function(progressEvent) {
+  // Alias this
+  var thiz = this;
+  var event;
+  // work backwords as to avoid skipping a position caused by removing an element
+  for (var i = thiz.$progressEvents.length - 1; i >= 0; i--) {
+    event = thiz.$progressEvents[i];
+    if (event.event === "question_submission") {
+      if (
+        event.data.label === progressEvent.data.label & 
+        progressEvent.data.label !== undefined
+      ) {
+        // remove the item from existing progress events
+        thiz.$progressEvents.splice(i, 1)
+        return;
+      }
+    }
+  }
+}
+
+
+Tutorial.prototype.$fireProgressEvent = function(event, data) {
+  
+  // Alias this
+  var thiz = this;
+  
+  // progress event to fire
+  var progressEvent = { event: event, data: data };
+  
+  // determine element and completed status
+  if (event == "exercise_submission" || event == "question_submission") {
+    var element = $('.tutorial-exercise[data-label="' + data.label + '"]').add(
+                    '.tutorial-question[data-label="' + data.label + '"]');
+    if (element.length > 0) {
+      progressEvent.element = element;
+      if (event == "exercise_submission") {
+        // any progress event for an exercise is to complete only
+        progressEvent.completed = true;  
+      } else {
+        // question_submission
+        // questions may be reset with "try again", and not in a completed state
+        progressEvent.completed = (data.answer !== null);
+      }
+    }
+    
+  }
+  else if (event == "section_skipped") {
+     var exerciseElement = $(thiz.$idSelector(data.sectionId));
+     progressEvent.element = exerciseElement;
+     progressEvent.completed = false;
+  }
+  else if (event == "video_progress") {
+    var videoElement = $('iframe[src="' + data.video_url + '"]');
+    if (videoElement.length > 0) {
+      progressEvent.element = videoElement;
+      progressEvent.completed = (2*data.time) > data.total_time;
+    }
+  }
+  
+  // remove any prior forms of this progressEvent
+  this.$removeConflictingProgressEvents(progressEvent)
+  
+  // fire it if we found an element
+  if (progressEvent.element) {
+    
+    // fire event
+    this.$fireProgress(progressEvent);
+    
+    // synthesize higher level section completed events
+    thiz.$fireSectionCompleted(progressEvent.element);
+  }
+};  
+  
+Tutorial.prototype.$initializeProgress = function(progress_events) {
+ 
+  // Alias this
+  var thiz = this;
+  
+  // replay progress messages from previous state
+  for (var i = 0; i<progress_events.length; i++) {
+    
+    // get event
+    var progress = progress_events[i];
+    var progressEvent = progress.event;
+    
+    // determine data
+    var progressEventData = {};
+    if (progressEvent == "exercise_submission") {
+      progressEventData.label = progress.data.label;
+      progressEventData.correct = progress.data.correct;
+    }
+    else if (progressEvent == "question_submission") {
+      progressEventData.label = progress.data.label;
+      progressEventData.answer = progress.data.answer;
+    }
+    else if (progressEvent == "section_skipped") {
+      progressEventData.sectionId = progress.data.sectionId;
+    }
+    else if (progressEvent == "video_progress") {
+      progressEventData.video_url = progress.data.video_url;
+      progressEventData.time = progress.data.time;
+      progressEventData.total_time = progress.data.total_time;
+    }
+    
+    thiz.$fireProgressEvent(progressEvent, progressEventData);
+  }
+  
+  // handle susequent progress messages
+  /*Shiny.addCustomMessageHandler("tutorial.progress_event", function(progress) {
+    thiz.$fireProgressEvent(progress.event, progress.data);
+  });*/
+}; 
+  
+
+/* Shared utility functions */
+
+Tutorial.prototype.$serverRequest = function (type, data, success, error) {
+  /*return $.ajax({
+    type: "POST",
+    url: "session/" + Shiny.shinyapp.config.sessionId + 
+           "/dataobj/" + type + "?w=" + Shiny.shinyapp.config.workerId,
+    contentType: "application/json",
+    data: JSON.stringify(data),
+    dataType: "json",
+    success: success,
+    error: error
+  });*/
+};
+
+ // Record an event
+Tutorial.prototype.$recordEvent = function(label, event, data) {
+  var params = {
+    label: label,
+    event: event,
+    data: data
+  };
+  this.$serverRequest("record_event", params, null);
+};
+
+
+Tutorial.prototype.$countLines = function(str) { 
+  return str.split(/\r\n|\r|\n/).length; 
+};
+
+
+Tutorial.prototype.$injectScript = function(src, onload) {
+  var script = document.createElement('script');
+  script.src = src;
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
+  $(script).load(onload);
+};
+
+Tutorial.prototype.$debounce = function(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+
+
+/* Videos */
+
+Tutorial.prototype.$initializeVideos = function() {
+  
+  // regexes for video types
+  var youtubeRegex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  var vimeoRegex = /(?:vimeo)\.com.*(?:videos|video|channels|)\/([\d]+)/i;
+  
+  // check a url for video typtes
+  function isYouTubeVideo(src) {
+    return src.match(youtubeRegex);
+  }
+  function isVimeoVideo(src) {
+    return src.match(vimeoRegex);
+  }
+  function isVideo(src) {
+    return isYouTubeVideo(src) || isVimeoVideo(src);
+  }
+  
+  // function to normalize a video src url (web view -> embed)
+  function normalizeVideoSrc(src) {
+    
+    // youtube
+    var youtubeMatch = src.match(youtubeRegex);
+    if (youtubeMatch)
+      return "https://www.youtube.com/embed/" + youtubeMatch[2] + "?enablejsapi=1";
+    
+    // vimeo
+    var vimeoMatch = src.match(vimeoRegex);
+    if (vimeoMatch)
+      return "https://player.vimeo.com/video/" + vimeoMatch[1];
+
+    // default to reflecting src back      
+    return src;
+  }
+  
+  // function to set the width and height for the container conditioned on
+  // any user-specified height and width
+  function setContainerSize(container, width, height) {
+    
+    // default ratio
+    var aspectRatio = 9 / 16;
+    
+    // default width to 100% if not specified
+    if (!width)
+      width = "100%";
+    
+    // percentage based width
+    if (width.slice(-1) == "%") {
+      
+      container.css('width', width);
+      if (!height) {
+        height = 0;
+        var paddingBottom = (parseFloat(width) * aspectRatio) + '%';
+        container.css('padding-bottom', paddingBottom);
+      }
+      container.css('height', height);
+    }
+    // other width unit
+    else {
+      // add 'px' if necessary
+      if ($.isNumeric(width))
+        width = width + "px";
+      container.css('width', width);
+      if (!height)
+        height = (parseFloat(width) * aspectRatio) + 'px';
+      container.css('height', height);
+    }
+  }
+  
+  // inspect all images to see if they contain videos
+  $("img").each(function() {
+    
+    // skip if this isn't a video
+    var videoSrc = $(this).attr('src');
+    if (!isVideo(videoSrc))
+      return;
+      
+    // hide while we process
+    $(this).css('display', 'none');
+
+    // collect various attributes
+    var width = $(this).get(0).style.width;
+    var height = $(this).get(0).style.height;
+    $(this).css('width', '').css('height', '');
+    var attrs = {};
+    $.each(this.attributes, function(idex, attr) {
+      if (attr.nodeName == "width")
+        width = String(attr.nodeValue);
+      else if (attr.nodeName == "height")
+        height = String(attr.nodeValue);
+      else if (attr.nodeName == "src")
+        attrs.src = normalizeVideoSrc(attr.nodeValue);
+      else
+        attrs[attr.nodeName] = attr.nodeValue;
+    });
+    
+    // replace the image with the iframe inside a video container
+    $(this).replaceWith(function() {
+      var iframe = $('<iframe/>', attrs);
+      iframe.addClass('tutorial-video');
+      if (isYouTubeVideo(videoSrc))
+        iframe.addClass('tutorial-video-youtube');
+      else if (isVimeoVideo(videoSrc))
+        iframe.addClass('tutorial-video-vimeo');
+      iframe.attr('allowfullscreen', '');
+      iframe.css('display', '');
+      var container = $('<div class="tutorial-video-container"></div>');
+      setContainerSize(container, width, height);
+      container.append(iframe);
+      return container;
+    });
+  });
+  
+  // we'll initialize video player APIs off of $restoreState
+  this.$logTiming("initialized-videos");
+};
+
+Tutorial.prototype.$initializeVideoPlayers = function(video_progress) {
+  
+  // don't interact with video player APIs in Qt
+  if (/\bQt\//.test(window.navigator.userAgent))
+    return;
+    
+  this.$initializeYouTubePlayers(video_progress);
+  this.$initializeVimeoPlayers(video_progress);
+  
+};
+
+Tutorial.prototype.$videoPlayerRestoreTime = function(src, video_progress) {
+  
+  // find a restore time for this video
+  for (var v = 0; v<video_progress.length; v++) {
+    var id = video_progress[v].id;
+    if (src == id) {
+      var time = video_progress[v].data.time;
+      var total_time = video_progress[v].data.total_time;
+      // don't return a restore time if we are within 10 seconds of the beginning
+      // or the end of the video.
+      if (time > 10 && ((total_time - time) > 10))
+        return time;
+    }
+  }
+  
+  // no time to restore, return 0
+  return 0;
+};
+
+Tutorial.prototype.$initializeYouTubePlayers = function(video_progress) {
+
+  // YouTube JavaScript API
+  // https://developers.google.com/youtube/iframe_api_reference
+  
+  // alias this
+  var thiz = this;
+  
+  // attach to youtube videos
+  var videos = $('iframe.tutorial-video-youtube');
+  if (videos.length > 0) {
+    this.$injectScript('https://www.youtube.com/iframe_api', function() {
+      
+      YT.ready(function() {
+        
+        videos.each(function() {
+          
+          // video and player
+          var video = $(this);
+          var videoUrl = video.attr('src');
+          var player = null;
+          var lastState = -1;
+          
+           // helper to report progress to the server
+          function reportProgress() {
+            thiz.$reportVideoProgress(videoUrl,
+                                      player.getCurrentTime(),
+                                      player.getDuration());
+          }
+          
+          // helper to restore video time. attempt to restore to 10 seconds prior
+          // to the last save point (to recapture frame of reference)
+          function restoreTime() {
+            var restoreTime = thiz.$videoPlayerRestoreTime(videoUrl, video_progress);
+            if (restoreTime > 0) {
+              player.mute();
+              player.playVideo();
+              setTimeout(function() {
+                player.pauseVideo();
+                player.seekTo(restoreTime, true);
+                player.unMute();
+              }, 2000);
+            }
+          }
+          
+          // function to call onReady
+          function onReady() {
+            restoreTime();  
+          }
+          
+          // function to call on state changed
+          function onStateChange() {
+            
+            // get current state
+            var state = player.getPlayerState();
+           
+            // don't report for unstarted & queued
+            if (state == -1 || state == YT.PlayerState.CUED) {
+            
+            }
+            
+            // always report progress for playing
+            else if (state == YT.PlayerState.PLAYING) {
+              reportProgress();
+            }
+            
+            // report for other states as long as they aren't duplicates
+            else if (state != lastState) {
+              reportProgress();
+            }
+            
+            // update last state
+            lastState = state;
+          }
+          
+          // create the player
+          player = new YT.Player(this, { events: { 
+              'onReady': onReady,
+              'onStateChange': onStateChange 
+            }
+          });
+        
+          // poll for state change every 5 seconds
+          window.setInterval(onStateChange, 5000);
+        });
+      });
+    });
+  }
+};
+
+Tutorial.prototype.$initializeVimeoPlayers = function(video_progress) {
+  
+  // alias this
+  var thiz = this;
+  
+  // Vimeo JavaScript API
+  // https://github.com/vimeo/player.js
+  
+  var videos = $('iframe.tutorial-video-vimeo');
+  if (videos.length > 0) {
+    this.$injectScript('https://player.vimeo.com/api/player.js', function() {
+      videos.each(function() {
+        
+        // video and player
+        var video = $(this)
+        var videoUrl = video.attr('src');
+        var player = new Vimeo.Player(this);
+        var lastReportedTime = null;
+        
+        // restore time if we can
+        player.ready().then(function() {
+          var restoreTime = thiz.$videoPlayerRestoreTime(videoUrl, video_progress);
+          if (restoreTime > 0) {
+            player.getVolume().then(function(volume) {
+              player.setCurrentTime(restoreTime).then(function() {
+                player.pause().then(function() {
+                  player.setVolume(volume);
+                });
+              }); 
+            });
+          }
+        });
+        
+        // helper function to report progress
+        function reportProgress(data, throttle) {
+          
+          // default throttle to false
+          if (throttle === undefined)
+            throttle = false;
+          
+          // if we are throttling then don't report if the last
+          // reported time is within 5 seconds
+          if (throttle && (lastReportedTime != null) && 
+              ((data.seconds - lastReportedTime) < 5)) {
+            return;
+          }
+          
+          // report progress
+          thiz.$reportVideoProgress(videoUrl, data.seconds, data.duration);
+          lastReportedTime = data.seconds;
+        }
+        
+        // report progress on various events
+        player.on('play', reportProgress);
+        player.on('pause', reportProgress);
+        player.on('ended', reportProgress);
+        player.on('timeupdate', function(data) {
+          reportProgress(data, true);
+        });
+      });
+    });
+  }
+};
+
+Tutorial.prototype.$reportVideoProgress = function(video_url, time, total_time) {
+  this.$serverRequest("video_progress", {
+    "video_url": video_url,
+    "time": time,
+    "total_time": total_time
+  });
+};
+
+
+/* Exercise initialization and shared utility functions */ 
+
+Tutorial.prototype.$initializeExercises = function() {
+  
+  this.$initializeExerciseEditors();
+  this.$initializeExerciseSolutions();
+  this.$initializeExerciseEvaluation();
+  
+  this.$logTiming("initialized-exercises");
+};
+
+Tutorial.prototype.$exerciseForLabel = function(label) {
+  return $('.tutorial-exercise[data-label="' + label + '"]');
+};
+
+Tutorial.prototype.$forEachExercise = function(operation) {
+  return $(".tutorial-exercise").each(function() {
+    var exercise = $(this);
+    operation(exercise);
+  });
+};
+
+Tutorial.prototype.$exerciseSupportCode = function(label) {
+  var selector = '.tutorial-exercise-support[data-label="' + label + '"]';
+  var code = $(selector).children('pre').children('code');
+  if (code.length > 0)
+    return code.text();
+  else
+    return null;
+};
+
+Tutorial.prototype.$exerciseSolutionCode = function(label) {
+  return this.$exerciseSupportCode(label + "-solution");
+};
+
+Tutorial.prototype.$exerciseCheckCode = function(label) {
+  return this.$exerciseSupportCode(label + "-check");
+};
+
+Tutorial.prototype.$exerciseHintDiv = function(label) {
+  
+  // look for a div w/ hint id
+  var id = "section-" + label + "-hint";
+  var hintDiv = $('div#' + id);
+  
+  // ensure it isn't a section then return
+  if (hintDiv.length > 0 && !hintDiv.hasClass('section'))
+    return hintDiv;
+  else
+    return null;
+};
+
+Tutorial.prototype.$exerciseHintsCode = function(label) {
+  
+  // look for a single hint
+  var hint = this.$exerciseSupportCode(label + "-hint");
+  if (hint !== null)
+    return [hint];
+    
+  // look for a sequence of hints
+  var hints = [];
+  var index = 1;
+  while(true) {
+    var hintLabel = label + "-hint-" + index++;
+    hint = this.$exerciseSupportCode(hintLabel);
+    if (hint !== null)
+      hints.push(hint);
+    else
+      break;
+  }
+  
+  // return what we have (null if empty)
+  if (hints.length > 0)
+    return hints;
+  else
+    return null;
+};
+
+// get the exercise container of an element
+Tutorial.prototype.$exerciseContainer = function(el) {
+  return $(el).closest(".tutorial-exercise");
+};
+
+// show progress for exercise
+Tutorial.prototype.$showExerciseProgress = function(label, button, show) {
+  
+  // references to various UI elements
+  var exercise = this.$exerciseForLabel(label);
+  var outputFrame = exercise.children('.tutorial-exercise-output-frame');
+  var runButtons = exercise.find('.btn-tutorial-run');
+  
+  // if the button is "run" then use the run button
+  if (button === "run")
+    button = exercise.find('.btn-tutorial-run').last();
+  
+  // show/hide progress UI
+  var spinner = 'fa-spinner fa-spin fa-fw';
+  if (show) {
+    outputFrame.addClass('recalculating');
+    runButtons.addClass('disabled');
+    if (button !== null) {
+      var runIcon = button.children('i');
+      runIcon.removeClass(button.attr('data-icon'));
+      runIcon.addClass(spinner);
+    }
+  }
+  else {
+    outputFrame.removeClass('recalculating');
+    runButtons.removeClass('disabled');
+    runButtons.each(function() {
+      var button = $(this);
+      var runIcon = button.children('i');
+      runIcon.addClass(button.attr('data-icon'));
+      runIcon.removeClass(spinner);
+    });
+  }
+};
+
+
+// behavior constants
+Tutorial.prototype.kMinLines = 3;
+
+// edit code within an ace editor
+Tutorial.prototype.$attachAceEditor = function(target, code) {
+  var editor = ace.edit(target);
+  editor.setHighlightActiveLine(false);
+  editor.setShowPrintMargin(false);
+  editor.setShowFoldWidgets(false);
+  editor.setBehavioursEnabled(true);
+  editor.renderer.setDisplayIndentGuides(false);
+  editor.setTheme("ace/theme/textmate");
+  editor.$blockScrolling = Infinity;
+  editor.session.setMode("ace/mode/r");
+  editor.session.getSelection().clearSelection();
+  editor.setValue(code, -1);
+  return editor;
+};
+
+
+/* Exercise editor */
+
+Tutorial.prototype.$exerciseEditor = function(label) {
+  return this.$exerciseForLabel(label).find('.tutorial-exercise-code-editor');
+};
+
+Tutorial.prototype.$initializeExerciseEditors = function() {
+  
+  // alias this
+  var thiz = this;
+
+  this.$forEachExercise(function(exercise) {
+    
+    // capture label and caption
+    var label = exercise.attr('data-label');
+    var caption = exercise.attr('data-caption');
+
+    // helper to create an id
+    function create_id(suffix) {
+      return "tutorial-exercise-" + label + "-" + suffix;
+    } 
+
+
+    // when we receive focus hide solutions in other exercises
+    exercise.on('focusin', function() {
+      $('.btn-tutorial-solution').each(function() {
+        if (exercise.has($(this)).length === 0)
+          thiz.$removeSolution(thiz.$exerciseContainer($(this)));
+      });
+    });
+     
+    // get all <pre class='text'> elements, get their code, then remove them
+    var code = '';
+    var code_blocks = exercise.children('pre.text, pre.lang-text');
+    code_blocks.each(function() {
+      var code_element = $(this).children('code');
+      if (code_element.length > 0)
+        code = code + code_element.text();
+      else 
+        code = code + $(this).text();
+    });
+    code_blocks.remove();
+    // ensure a minimum of 3 lines
+    var lines = code.split(/\r\n|\r|\n/).length;
+    for (var i=lines; i<thiz.kMinLines;i++)
+      code = code + "\n";
+        
+    
+    // get the knitr options script block and detach it (will move to input div)
+    var options_script = exercise.children('script[data-opts-chunk="1"]').detach();
+    
+    // wrap the remaining elements in an output frame div
+    exercise.wrapInner('<div class="tutorial-exercise-output-frame"></div>');
+    var output_frame = exercise.children('.tutorial-exercise-output-frame');
+    
+    // create input div
+    var input_div = $('<div class="tutorial-exercise-input panel panel-default"></div>');
+    input_div.attr('id', create_id('input'));
+
+    // creating heading
+    var panel_heading = $('<div class="panel-heading tutorial-panel-heading"></div>');
+    panel_heading.text(caption);
+    input_div.append(panel_heading);
+
+    // create body
+    var panel_body = $('<div class="panel-body"></div>');
+    input_div.append(panel_body);
+    
+    // function to add a submit button
+    function add_submit_button(icon, style, text, check) {
+      var button = $('<a class="btn ' + style + ' btn-xs btn-tutorial-run ' + 
+                       'pull-right"></a>');
+      button.append($('<i class="fa ' + icon + '"></i>'));
+      button.attr('type', 'button');
+      button.append(' ' + text);
+      var isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+      var title = text;
+      if (!check)
+        title = title + " (" + (isMac ? "Cmd" : "Ctrl") + "+Shift+Enter)";
+      button.attr('title', title);
+      if (check)
+        button.attr('data-check', '1');
+      button.attr('data-icon', icon);
+      button.on('click', function() {
+        thiz.$removeSolution(exercise);
+        thiz.$showExerciseProgress(label, button, true);
+      });
+      panel_heading.append(button);
+      return button;
+    }
+    
+    // create submit answer button if checks are enabled
+    if (thiz.$exerciseCheckCode(label) !== null)
+      add_submit_button("fa-check-square-o", "btn-primary", "Submit Answer", true);
+    
+    // create run button
+    var run_button = add_submit_button("fa-play", "btn-success", "Run Code", false);
+    
+    // create code div and add it to the input div
+    var code_div = $('<div class="tutorial-exercise-code-editor"></div>');
+    var code_id = create_id('code-editor');
+    code_div.attr('id', code_id);
+    panel_body.append(code_div);
+    
+    // add the knitr options script to the input div
+    panel_body.append(options_script);
+    
+    // prepend the input div to the exercise container
+    exercise.prepend(input_div);
+    
+    // create an output div and append it to the output_frame
+    var output_div = $('<div class="tutorial-exercise-output"></div>');
+    output_div.attr('id', create_id('output'));
+    output_frame.append(output_div);
+      
+    // activate the ace editor
+    var editor = thiz.$attachAceEditor(code_id, code);
+    
+    // get setup_code (if any)
+    var setup_code = null;
+    var chunk_options = options_script.length == 1 ? JSON.parse(options_script.text()) : {};
+    if (chunk_options["exercise.setup"])
+        setup_code = thiz.$exerciseSupportCode(chunk_options["exercise.setup"]);     
+      else
+        setup_code = thiz.$exerciseSupportCode(label + "-setup");
+        
+    // use code completion
+    var completion  = exercise.attr('data-completion') === "1";
+    var diagnostics = exercise.attr('data-diagnostics') === "1";
+    
+    // support startover
+    var startover_code = exercise.attr('data-startover') === "1" ? code : null;
+    
+        
+    // set tutorial options/data
+    editor.tutorial = {
+      label: label,
+      setup_code: setup_code,
+      completion: completion,
+      diagnostics: diagnostics,
+      startover_code: startover_code
+    };
+    
+    // bind execution keys 
+    function bindExecutionKey(name, key) {
+      var macKey = key.replace("Ctrl+", "Command+");
+      editor.commands.addCommand({
+        name: name,
+        bindKey: {win: key, mac: macKey},
+        exec: function(editor) {
+          run_button.trigger('click');
+        }
+      });
+    }
+    bindExecutionKey("execute1", "Ctrl+Enter");
+    bindExecutionKey("execute2", "Ctrl+Shift+Enter");
+    
+    // re-focus the editor on run button click
+    run_button.on('click', function() {
+      editor.focus();
+    });
+
+    // mange ace height as the document changes
+    var updateAceHeight = function()  {
+      var lines = exercise.attr('data-lines');
+      if (lines && (lines > 0)) {
+         editor.setOptions({
+            minLines: lines,
+            maxLines: lines
+         });
+      } else {
+         editor.setOptions({
+            minLines: thiz.kMinLines,
+            maxLines: Math.max(Math.min(editor.session.getLength(), 15), 
+                               thiz.kMinLines)
+         });
+      }
+     
+    };
+    updateAceHeight();
+    editor.getSession().on('change', updateAceHeight);
+
+    // add hint/solution/startover buttons if necessary
+    thiz.$addSolution(exercise, panel_heading, editor);
+  
+    exercise.parents('.section').on('shown', function() {
+      editor.resize(true);
+    });
+    
+    
+    
+  });  
+};
+
+/* Exercise solutions */
+
+Tutorial.prototype.$initializeExerciseSolutions = function() {
+  
+  // alias this
+  var thiz = this;
+  
+  // hide solutions when clicking outside exercises
+  $(document).on('mouseup', function(ev) {
+    var exercise = thiz.$exerciseContainer(ev.target);
+    if (exercise.length === 0) {
+      thiz.$forEachExercise(thiz.$removeSolution);
+    }
+  });
+};
+
+
+// add a solution for the specified exercise label
+Tutorial.prototype.$addSolution = function(exercise, panel_heading, editor) {
+
+  // alias this
+  var thiz = this;
+
+  // get label
+  var label = exercise.attr('data-label');
+
+  // solution/hints (in the presence of hints convert solution to last hint)
+  var solution = thiz.$exerciseSolutionCode(label);
+  var hints = thiz.$exerciseHintsCode(label);
+  if (hints !== null && solution !== null) {
+    hints.push(solution);
+    solution = null;
+  }
+  var hintDiv = thiz.$exerciseHintDiv(label);
+  
+  // function to add a helper button
+  function addHelperButton(icon, caption) {
+    var button = $('<a class="btn btn-light btn-xs btn-tutorial-solution"></a>');
+    button.attr('role', 'button');
+    button.attr('title', caption);
+    button.append($('<i class="fa ' + icon + '"></i>'));
+    button.append(' ' + caption); 
+    panel_heading.append(button); 
+    return button;
+  }
+  
+  // function to add a hint button
+  function addHintButton(caption) {
+    return addHelperButton("fa-lightbulb-o", caption);  
+  }
+  
+  // helper function to record solution/hint requests
+  function recordHintRequest(index) {
+    thiz.$recordEvent(label, "exercise_hint", {
+      type: solution !== null ? "solution" : "hint",
+      index: hintIndex
+    });
+  }
+  
+  // add a startover button
+  if (editor.tutorial.startover_code !== null) {
+    var startOverButton = addHelperButton("fa-refresh", "Start Over");
+    startOverButton.on('click', function() {
+      editor.setValue(editor.tutorial.startover_code, -1);
+      thiz.$clearExerciseOutput(exercise);
+    });
+  }
+  
+  // if we have a hint div
+  if (hintDiv != null) {
+    
+    // mark the div as a hint and hide it
+    hintDiv.addClass('tutorial-hint');
+    hintDiv.css('display', 'none');
+    
+    // create hint button
+    var button = addHintButton("Hint");
+   
+    // handle showing and hiding the hint
+    button.on('click', function() {
+      
+      // record the request
+      recordHintRequest(0);
+      
+      // prepend it to the output frame (if a hint isn't already in there)
+      var outputFrame = exercise.children('.tutorial-exercise-output-frame');
+      if (outputFrame.find('.tutorial-hint').length == 0) {
+        var panel = $('<div class="panel panel-default tutorial-hint-panel"></div>');
+        var panelBody = $('<div class="panel-body"></div>');
+        var hintDivClone = hintDiv.clone().attr('id', '').css('display', 'inherit');
+        panelBody.append(hintDivClone);
+        panel.append(panelBody);
+        outputFrame.prepend(panel);
+      } else {
+        outputFrame.find('.tutorial-hint-panel').remove();
+      }
+    });
+    
+  }
+  
+  // else if we have a solution or hints
+  else if (solution || hints) {
+    
+    // determine caption
+    var caption = null;
+    if (solution) {
+      caption = "Solution";
+    }
+    else {
+      if (hints.length > 1)
+        caption = "Hints";
+      else 
+        caption = "Hint";
+    }
+    
+    // determine editor lines
+    var editorLines = thiz.kMinLines;
+    if (solution)
+      editorLines = Math.max(thiz.$countLines(solution), editorLines);
+    else {
+      for (var i = 0; i<hints.length; i++)
+        editorLines = Math.max(thiz.$countLines(hints[i]), editorLines);
+    }
+    
+    // track hint index
+    var hintIndex = 0;
+    
+    // create solution buttion
+    var button = addHintButton(caption);
+   
+    // handle showing and hiding the popover
+    button.on('click', function() {
+      
+      // record the request
+      recordHintRequest(hintIndex);
+      
+      // determine solution text
+      var solutionText = solution !== null ? solution : hints[hintIndex];
+ 
+      var visible = button.next('div.popover:visible').length > 0;
+      if (!visible) {
+        var popover = button.popover({
+          placement: 'top',
+          template: '<div class="popover tutorial-solution-popover" role="tooltip">' + 
+                    '<div class="arrow"></div>' + 
+                    '<div class="popover-title tutorial-panel-heading"></div>' + 
+                    '<div class="popover-content"></div>' + 
+                    '</div>',
+          content: solutionText,
+          trigger: "manual"
+        });
+        popover.on('inserted.bs.popover', function() {
+          
+          // get popover element
+          var dataPopover = popover.data('bs.popover');
+          var popoverTip = dataPopover.tip();
+          var content = popoverTip.find('.popover-content');
+          
+          // adjust editor and container height
+          var solutionEditor = thiz.$attachAceEditor(content.get(0), solutionText);
+          solutionEditor.setReadOnly(true);
+          solutionEditor.setOptions({
+            minLines: editorLines
+          });
+          var height = editorLines * solutionEditor.renderer.lineHeight;
+          content.css('height', height + 'px');
+          
+          // get title panel
+          var popoverTitle = popoverTip.find('.popover-title');
+          
+          // add next hint button if we have > 1 hint
+          if (solution === null && hints.length > 1) {
+            var nextHintButton = $('<a class="btn btn-light btn-xs btn-tutorial-next-hint"></a>');
+            nextHintButton.append("Next Hint ");
+            nextHintButton.append($('<i class="fa fa-angle-double-right"></i>'));
+            nextHintButton.on('click', function() {
+              hintIndex = hintIndex + 1;
+              solutionEditor.setValue(hints[hintIndex], -1);
+              if (hintIndex == (hints.length-1))
+                nextHintButton.addClass('disabled');
+              recordHintRequest(hintIndex);
+            });
+            if (hintIndex == (hints.length-1))
+              nextHintButton.addClass('disabled');
+            popoverTitle.append(nextHintButton);
+          }
+          
+          // add copy button
+          var copyButton = $('<a class="btn btn-info btn-xs ' + 
+                             'btn-tutorial-copy-solution pull-right"></a>');
+          copyButton.append($('<i class="fa fa-copy"></i>'));
+          copyButton.append(" Copy to Clipboard");
+          popoverTitle.append(copyButton);
+          var clipboard = new Clipboard(copyButton[0], {
+            text: function(trigger) {
+              return solutionEditor.getValue();
+            }
+          });
+          clipboard.on('success', function(e) {
+            thiz.$removeSolution(exercise);
+            editor.focus();
+          });
+          copyButton.data('clipboard', clipboard);
+          
+        });
+        button.popover('show');
+        
+        // left position of popover and arrow
+        var popoverElement = exercise.find('.tutorial-solution-popover');
+        popoverElement.css('left', '0');
+        var popoverArrow = popoverElement.find('.arrow');
+        popoverArrow.css('left', button.position().left + (button.outerWidth()/2) + 'px');
+
+        // scroll into view if necessary
+        thiz.scrollIntoView(popoverElement);
+      }
+      else {
+        thiz.$removeSolution(exercise);
+      }
+
+      // always refocus editor
+      editor.focus();
+    });
+  }
+};
+
+
+
+// remove a solution for an exercise
+Tutorial.prototype.$removeSolution = function(exercise) {
+  // destory clipboardjs object if we've got one
+  var solutionButton = exercise.find('.btn-tutorial-copy-solution');
+  if (solutionButton.length > 0)
+    solutionButton.data('clipboard').destroy();
+    
+  // destroy popover
+  exercise.find('.btn-tutorial-solution').popover('destroy');
+};
+
+
+/* Exercise evaluation */
+
+Tutorial.prototype.$initializeExerciseEvaluation = function() {
+  
+  // alias this
+  var thiz = this;
+  
+  // get the current label context of an element
+  function exerciseLabel(el) {
+    return thiz.$exerciseContainer(el).attr('data-label');
+  }
+  
+  // ensure that the exercise containing this element is fully visible
+  function ensureExerciseVisible(el) {
+    // convert to containing exercise element
+    var exerciseEl = thiz.$exerciseContainer(el)[0];
+
+    // ensure visibility
+    thiz.scrollIntoView(exerciseEl);
+  }
+  
+  // register a shiny input binding for code editors
+  /*var exerciseInputBinding = new Shiny.InputBinding();
+  $.extend(exerciseInputBinding, {
+    
+    find: function(scope) {
+      return $(scope).find('.tutorial-exercise-code-editor');
+    },
+    
+    getValue: function(el) {
+      
+      // return null if we haven't been clicked and this isn't a restore
+      if (!this.clicked && !this.restore)
+        return null;
+      
+      // value object to return 
+      var value = {};
+      
+      // get the label
+      value.label = exerciseLabel(el);
+      
+      // get the code from the editor
+      var editor = ace.edit($(el).attr('id'));
+      value.code = editor.getSession().getValue();
+      
+      // get the preserved chunk options (if any)
+      var options_script = thiz.$exerciseContainer(el).find('script[data-opts-chunk="1"]');
+      if (options_script.length == 1)
+        value.options = JSON.parse(options_script.text());
+      else
+        value.options = {};
+      
+      // restore flag
+      value.restore = this.restore;
+
+      // get any setup, solution, or check chunks
+      
+      // setup
+      var label = exerciseLabel(el);
+      if (value.options["exercise.setup"])
+        value.setup = thiz.$exerciseSupportCode(value.options["exercise.setup"]);     
+      else
+        value.setup = thiz.$exerciseSupportCode(label + "-setup");
+        
+      // solution
+      value.solution = thiz.$exerciseSupportCode(label + "-solution");  
+        
+      // check
+      if (this.check) {
+        value.code_check = thiz.$exerciseSupportCode(label + "-code-check");
+        value.check = thiz.$exerciseCheckCode(label);
+      }
+      
+      // some randomness to ensure we re-execute on button clicks
+      value.timestamp = new Date().getTime();
+      
+      // return the value
+      return value;
+    },
+    
+    subscribe: function(el, callback) {
+      var binding = this;
+      this.runButtons(el).on('click.exerciseInputBinding', function(ev) {
+        binding.restore = false;
+        binding.clicked = true;
+        binding.check = ev.target.hasAttribute('data-check');
+        callback(true);
+      });
+      $(el).on('restore.exerciseInputBinding', function(ev, options) {
+        binding.restore = true;
+        binding.clicked = false;
+        binding.check = options.check;
+        callback(true);
+      });
+    },
+    
+    unsubscribe: function(el) {
+      this.runButtons(el).off('.exerciseInputBinding');
+    },
+    
+    runButtons: function(el) {
+      var exercise = thiz.$exerciseContainer(el);
+      return exercise.find('.btn-tutorial-run');
+    },
+    
+    restore: false,
+    clicked: false,
+    check: false
+  });*/
+  /*Shiny.inputBindings.register(exerciseInputBinding, 'tutorial.exerciseInput');
+  
+  // register an output binding for exercise output
+  var exerciseOutputBinding = new Shiny.OutputBinding();
+  $.extend(exerciseOutputBinding, {
+    
+    find: function find(scope) {
+      return $(scope).find('.tutorial-exercise-output');
+    },
+    
+    onValueError: function onValueError(el, err) {
+     
+      Shiny.unbindAll(el);
+      this.renderError(el, err);
+    },
+    
+    renderValue: function renderValue(el, data) {
+  
+      // remove default content (if any)
+      this.outputFrame(el).children().not($(el)).remove();
+      
+      // render the content
+      Shiny.renderContent(el, data);
+      
+      // bind bootstrap tables if necessary
+      if (window.bootstrapStylePandocTables)
+        window.bootstrapStylePandocTables();
+      
+      // bind paged tables if necessary
+      if (window.PagedTableDoc)
+        window.PagedTableDoc.initAll();
+      
+       // scroll exercise fully into view if we aren't restoring
+      var restoring = thiz.$exerciseContainer(el).data('restoring');
+      if (!restoring) {
+        ensureExerciseVisible(el);
+        thiz.$exerciseContainer(el).data('restoring', false);
+      } else {
+        thiz.$logTiming("restored-exericse-" + exerciseLabel(el));
+      }
+    },
+    
+    showProgress: function(el, show) {
+      thiz.$showExerciseProgress(exerciseLabel(el), null, show);
+    },
+    
+    outputFrame: function(el) {
+      return $(el).closest('.tutorial-exercise-output-frame');
+    }
+  });*/
+  /*Shiny.outputBindings.register(exerciseOutputBinding, 'tutorial.exerciseOutput');*/
+};
+
+Tutorial.prototype.$clearExerciseOutput = function(exercise) {
+  var outputFrame = $(exercise).find('.tutorial-exercise-output-frame');
+  var outputDiv = $(outputFrame).children('.tutorial-exercise-output');
+  outputFrame.children().not(outputDiv).remove();
+  outputDiv.empty();
+}
+
+
+/* Storage */
+
+Tutorial.prototype.$initializeStorage = function(identifiers, success) {
+  
+ 
+  // alias this
+  var thiz = this;
+  
+  // initialize data store. note that we simply ignore errors for interactions
+  // with storage since the entire behavior is a nice-to-have (i.e. we automatically
+  // degrade gracefully by either not restoring any state or restoring whatever
+  // state we had stored)
+  thiz.$store = window.localforage.createInstance({ 
+    name: "LearnrTutorialProgress", 
+    storeName: "Store_" + window.btoa(identifiers.tutorial_id + 
+                                      identifiers.tutorial_version)
+  });
+  
+  var objects = {};
+  if (thiz.$store) {
+  
+    // custom message handler to update store
+    /*Shiny.addCustomMessageHandler("tutorial.store_object", function(message) {
+      thiz.$store.setItem(message.id, message.data);
+    });*/
+    
+    // retreive the currently stored objects then pass them down to restore_state
+    thiz.$store.iterate(function(value, key, iterationNumber) {
+      objects = objects || {};
+      objects[key] = value;
+    }).then(function() {
+      success(objects);
+    }).catch(function(err) {
+      console.log(err);
+      success(objects);
+    });
+  } else {
+    success(objects);
+  }
+};
+
+
+Tutorial.prototype.$restoreState = function(objects) {
+  
+  // alias this
+  var thiz = this;
+  
+  // retreive state from server
+  thiz.$logTiming("restoring-state");
+  this.$serverRequest("restore_state", objects, function(data) {
+    
+    thiz.$logTiming("state-received");
+    
+    // initialize client state
+    thiz.$initializeClientState(data.client_state);
+    
+    // fire init event
+    thiz.$fireInit();
+    
+    // initialize progress
+    thiz.$initializeProgress(data.progress_events);
+    
+    // restore exercise and question submissions
+    thiz.$restoreSubmissions(data.submissions);
+    
+    // initialize video players
+    thiz.$initializeVideoPlayers(data.video_progress);
+    
+  });
+};
+
+
+Tutorial.prototype.$restoreSubmissions = function(submissions) {
+ 
+  // alias this
+  var thiz = this;
+ 
+  for (var i = 0; i < submissions.length; i++) {
+    
+    var submission = submissions[i];
+    var type = submission.type;
+    var id = submission.id;
+   
+    // exercise submissions
+    if (type === "exercise_submission") {
+      
+      // get code and checked status
+      var label = id;
+      var code = submission.data.code;
+      var checked = submission.data.checked;
+      
+      thiz.$logTiming("restoring-exercise-" + label);
+    
+      // find the editor 
+      var editorContainer = thiz.$exerciseEditor(label);
+      if (editorContainer.length > 0) {
+        
+        // restore code
+        var editor = ace.edit(editorContainer.attr('id'));
+        editor.setValue(code, -1);
+        
+        // fire restore event on the container (also set
+        // restoring flag on the exercise so we don't scroll it
+        // into view after restoration)
+        thiz.$exerciseForLabel(label).data('restoring', true);
+        thiz.$showExerciseProgress(label, 'run', true);
+        editorContainer.trigger('restore', {
+          check: checked
+        });
+      }
+    }
+    // question_submission's are done with shiny directly
+  }  
+};
+
+
+Tutorial.prototype.$removeState = function(completed) {
+  if (this.$store) {
+    this.$store.clear()
+      .then(completed)
+      .catch(function(err) {
+        console.log(err);
+        completed();
+      });
+  } else {
+    completed();
+  }
+};
+
+Tutorial.prototype.$initializeClientState = function(client_state) {
+  
+  // alias this
+  var thiz = this;
+  
+  // client state object
+  var last_client_state = {
+    scroll_position: 0,
+    hash: ''
+  };
+  
+  // debounced checker for scroll position
+  var maybePersistClientState = this.$debounce(function() {
+  
+    // get current client state
+    var current_client_state = {
+      'scroll_position': $(window).scrollTop(),
+      'hash': window.location.hash
+    };
+	  
+    // if it changed then persist it and upate last
+    if ((current_client_state.scroll_position != last_client_state.scroll_position) ||
+         current_client_state.hash != last_client_state.hash) {
+      thiz.$serverRequest("set_client_state", current_client_state, null);
+      last_client_state = current_client_state;
+    }
+  }, 1000);
+  
+  // check for client state on scroll position changed and hash changed
+  $(window).scroll(maybePersistClientState);
+  window.addEventListener("popstate", maybePersistClientState);
+  
+  // restore hash if there wasn't a hash already
+  if (!window.location.hash && client_state.hash) {
+    window.location.hash = client_state.hash;
+  }
+  
+  // restore scroll position (don't do this for now as it ends up being 
+  // kind of janky)
+  //if (client_state.scroll_position)
+  //  $(window).scrollTop(client_state.scroll_position);
+};
+
+
+/* Server initialization */
+
+// once we receive this message from the R side, we know that
+// `register_http_handlers()` has been run, indicating that the 
+// Shiny server is ready to handle http requests
+/*Shiny.addCustomMessageHandler("tutorial_isServerAvailable", function(message) {
+  tutorial_isServerAvailable = true;
+})*/
+
+Tutorial.prototype.$initializeServer = function() {
+  
+  // one-shot function to initialize server (wait for Shiny.shinyapp
+  // to be available before attempting to call server)
+  var thiz = this;
+  thiz.$logTiming("wait-server-available");
+  function initializeServer() {
+    
+    // retry after a delay
+    function retry(delay) {
+      setTimeout(function(){
+        initializeServer();
+      }, delay);  
+    }
+    
+    // wait for shiny config to be available (required for $serverRequest)
+    if (tutorial_isServerAvailable) {
+      thiz.$logTiming("server-available");
+      thiz.$serverRequest("initialize", { location: window.location }, 
+        function(response) {
+          thiz.$logTiming("server-initialized");
+          // initialize storage then restore state
+          thiz.$initializeStorage(response.identifiers, function(objects) {
+            thiz.$logTiming("storage-initialized");
+            thiz.$restoreState(objects);
+          });
+        }
+      );
+    }
+    else {
+      retry(250);
+    }
+  }
+  
+  // call initialize function
+  initializeServer();
+};
+
+$(document).ready(function() {
+  
+  var titleText = '';
+  var currentTopicIndex = -1;
+  var docProgressiveReveal = false;
+  var docAllowSkip = false;
+  var topics = [];
+  
+  var scrollLastSectionToView = false;
+  var scrollLastSectionPosition = 0;
+  
+  function setCurrentTopic(topicIndex) {
+    if (topics.length === 0) return;
+    
+    topicIndex = topicIndex * 1;  // convert strings to a number
+    
+    if (topicIndex == currentTopicIndex) return;
+    
+    if (currentTopicIndex != -1) {
+      var el = $(topics[currentTopicIndex].jqElement);
+      el.trigger('hide');
+      el.removeClass('current');
+      el.trigger('hidden');
+      $(topics[currentTopicIndex].jqListElement).removeClass('current');
+    }
+    
+    var currentEl = $(topics[topicIndex].jqElement);
+    currentEl.trigger('show');
+    currentEl.addClass('current');
+    currentEl.trigger('shown');
+    $(topics[topicIndex].jqListElement).addClass('current');
+    currentTopicIndex = topicIndex;
+    
+    // always start a topic with a the scroll pos at the top
+    // we do this in part to prevent the scroll to view behavior of hash navigation
+    setTimeout(function() {$(document).scrollTop(0);}, 0);
+  }
+  
+  function updateLocation(topicIndex) {
+    var baseUrl = window.location.href.replace(window.location.hash,"");
+    var href = baseUrl + '#' + topics[topicIndex].id;
+    window.location = href;
+  }
+  
+  function handleTopicClick(event) {
+    hideFloatingTopics();
+    updateLocation(this.getAttribute('index'));
+  }
+  
+  function showFloatingTopics() {
+    $('.topicsList').removeClass('hideFloating');
+  }
+  
+  function hideFloatingTopics() {
+    $('.topicsList').addClass('hideFloating');
+  }
+  
+  function updateVisibilityOfTopicElements(topicIndex) {
+    var topic = topics[topicIndex];
+    
+    if (!topic.progressiveReveal) return;
+    
+    var showSection = true;
+    
+    var lastVisibleSection = null;
+    
+    for (i = 0; i < topic.sections.length; i++ ) {
+      var section = topic.sections[i];
+      var sectionEl = $(section.jqElement);
+      if (showSection) {
+        sectionEl.trigger('show');
+        sectionEl.removeClass('hide');
+        sectionEl.trigger('shown');
+        if (section.skipped) {
+          sectionEl.removeClass('showSkip');
+        }
+        else {
+          sectionEl.addClass('showSkip');
+          lastVisibleSection = sectionEl;
+        }
+      }
+      else {
+        sectionEl.trigger('hide');
+        sectionEl.addClass('hide');
+        sectionEl.trigger('hidden');
+      }
+      showSection = (showSection && section.skipped);
+    }
+    
+    if (!topic.progressiveReveal || showSection) { // all sections are visible
+      $(topic.jqElement).removeClass('hideActions');
+    }
+    else {
+      $(topic.jqElement).addClass('hideActions');
+    }
+    
+    if (scrollLastSectionToView && lastVisibleSection) {
+      scrollLastSectionPosition = lastVisibleSection.offset().top - 28;
+      setTimeout(function() {
+        $('html, body').animate({
+          scrollTop: scrollLastSectionPosition
+        }, 300);
+      }, 60)
+    }
+    scrollLastSectionToView = false;
+  }
+  
+  function updateTopicProgressBar(topicIndex) {
+    var topic = topics[topicIndex];
+    
+    var percentToDo;
+    if (topic.sections.length == 0) {
+      percentToDo = !topic.topicCompleted * 100;
+    }
+    else {
+      percentToDo = (1 - topic.sectionsSkipped/topic.sections.length) * 100;
+    }
+    
+    $(topic.jqListElement).css('background-position-y', percentToDo + '%' );
+    
+  }
+  
+  function handleSkipClick(event) {
+    var sectionId = this.getAttribute('data-section-id');
+    // get the topic & section indexes
+    var topicIndex = -1;
+    var sectionIndex = -1;
+    var topic;
+    var section;
+    $.each(topics, function( ti, t) {
+      $.each(t.sections, function( si, s) {
+        if (sectionId == s.id) {
+          topicIndex = ti;
+          sectionIndex = si;
+          topic = t;
+          section = s;
+          return false;
+        }
+      })
+      return topicIndex == -1;
+    })
+    // if the section has exercises and is not complete, don't skip - put up message
+      if (section.exercises.length && !section.completed && !section.allowSkip) {
+        var exs = section.exercises.length == 1 ? 'exercise' : 'exercises';
+        bootbox.alert("You must complete the " + exs + " in this section before continuing.");
+      }
+      else {
+        if (sectionIndex == topic.sections.length - 1) {
+          // last section on the page
+          if (topicIndex < topics.length - 1) {
+            updateLocation(currentTopicIndex + 1);
+          }
+        }
+        else {
+          scrollLastSectionToView = true;
+        }
+        tutorial.skipSection(sectionId);
+      }
+    }
+
+    function handleNextTopicClick(event) {
+      // any sections in this topic? if not, mark it as skipped
+      if (topics[currentTopicIndex].sections.length == 0) {
+        tutorial.skipSection(topics[currentTopicIndex].id);
+      }
+      updateLocation(currentTopicIndex + 1);
+    }
+
+    function handlePreviousTopicClick(event) {
+      updateLocation(currentTopicIndex - 1);
+    }
+
+    // build the list of topics in the document
+    // and create/adorn the DOM for them as needed
+    function buildTopicsList() {
+      var topicsList = $('<div class="topicsList hideFloating"></div>');
+
+      var topicsHeader = $('<div class="topicsHeader"></div>');
+      topicsHeader.append($('<h2 class="tutorialTitle">' + titleText + '</h2>'));
+      var topicsCloser = $('<div class="paneCloser"></div>');
+      topicsCloser.on('click', hideFloatingTopics);
+      topicsHeader.append(topicsCloser);
+      topicsList.append(topicsHeader);
+
+      $('#doc-metadata').appendTo(topicsList);
+    
+    
+    var topicsDOM = $('.section.level2');
+    topicsDOM.each( function(topicIndex, topicElement) {
+      
+      var topic = {};
+      topic.id = $(topicElement).attr('id');
+      topic.exercisesCompleted = 0;
+      topic.sectionsCompleted = 0;
+      topic.sectionsSkipped = 0;
+      topic.topicCompleted = false; // only relevant if topic has 0 exercises
+      topic.jqElement = topicElement;
+      topic.jqTitleElement = $(topicElement).children('h2')[0];
+      topic.titleText = topic.jqTitleElement.innerText;
+      var progressiveAttr = $(topicElement).attr('data-progressive');
+      if (typeof progressiveAttr !== typeof undefined && progressiveAttr !== false) {
+        topic.progressiveReveal = (progressiveAttr == 'true' || progressiveAttr == 'TRUE');
+      }
+      else {
+        topic.progressiveReveal = docProgressiveReveal;
+      }
+      
+      jqTopic = $('<div class="topic" index="' + topicIndex + '">' + topic.titleText + '</div>');
+      jqTopic.on('click', handleTopicClick);
+      topic.jqListElement = jqTopic;
+      $(topicsList).append(jqTopic);
+      
+      var topicActions = $('<div class="topicActions"></div>');
+      if (topicIndex > 0) {
+        var prevButton = $('<button class="btn btn-default">Previous Topic</button>');
+        prevButton.on('click', handlePreviousTopicClick);
+        topicActions.append(prevButton);
+      }
+      if (topicIndex < topicsDOM.length - 1) {
+        var nextButton = $('<button class="btn btn-primary">Next Topic</button>');
+        nextButton.on('click', handleNextTopicClick);
+        topicActions.append(nextButton);
+      }
+      $(topicElement).append(topicActions);
+      
+      topic.sections = [];
+      var sectionsDOM = $(topicElement).children('.section.level3');
+      sectionsDOM.each( function( sectionIndex, sectionElement) {
+        
+        if (topic.progressiveReveal) {
+          var continueButton = $('<button class="btn btn-default skip" data-section-id="' + sectionElement.id + '">Continue</button>');
+          continueButton.on('click', handleSkipClick);
+          var actions = $('<div class="exerciseActions"></div>');
+          actions.append(continueButton);
+          $(sectionElement).append(actions);
+        }
+        
+        var section = {};
+        section.exercises = [];
+        var exercisesDOM = $(sectionElement).children('.tutorial-exercise');
+        exercisesDOM.each(function(exerciseIndex, exerciseElement) {
+          var exercise = {};
+          exercise.dataLabel = $(exerciseElement).attr('data-label');
+          exercise.completed = false;
+          exercise.jqElement = exerciseElement;
+          section.exercises.push(exercise);
+        });
+        
+        var allowSkipAttr = $(sectionElement).attr('data-allow-skip');
+        var sectionAllowSkip = docAllowSkip;
+        if (typeof allowSkipAttr !== typeof undefined && allowSkipAttr !== false) {
+          sectionAllowSkip = (allowSkipAttr == 'true' || allowSkipAttr == 'TRUE');
+        }
+        
+        section.id = sectionElement.id;
+        section.completed = false;
+        section.allowSkip = sectionAllowSkip;
+        section.skipped = false;
+        section.jqElement = sectionElement;
+        topic.sections.push(section);
+        
+      });
+      
+      topics.push(topic);
+    });
+    
+    var topicsFooter = $('<div class="topicsFooter"></div>');
+    
+    var resetButton = $('<span class="resetButton">Start Over</span>');
+    resetButton.on('click', function() {
+      bootbox.confirm("Are you sure you want to start over? (all exercise progress will be reset)",
+                      function(result) {
+                        if (result)
+                          tutorial.startOver();
+                      });
+    });
+    topicsFooter.append(resetButton);
+    topicsList.append(topicsFooter);
+    
+    return topicsList;
+    
+  }
+  
+  // transform the DOM here
+  function transformDOM() {
+    
+    titleText = $('title')[0].innerText;
+    
+    var progAttr = $('meta[name=progressive]').attr("content");
+    docProgressiveReveal = (progAttr == 'true' || progAttr == 'TRUE');
+    var allowSkipAttr = $('meta[name=allow-skip]').attr("content");
+    docAllowSkip = (allowSkipAttr == 'true' || allowSkipAttr == 'TRUE');
+    
+    var tutorialTitle = $('<h2 class="tutorialTitle">' + titleText + '</h2>');
+    tutorialTitle.on('click', showFloatingTopics);
+    $('.topics').prepend(tutorialTitle);
+    
+    $('.bandContent.topicsListContainer').append(buildTopicsList());
+    
+    // initialize visibility of all topics' elements
+    for (var t = 0; t < topics.length; t++) {
+      updateVisibilityOfTopicElements(t);
+    }
+
+    function handleResize() {
+      $('.topicsList').css("max-height", window.innerHeight);
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+  }
+
+  // support bookmarking of topics
+  function handleLocationHash() {
+
+    function findTopicIndexFromHash() {
+      var hash = window.location.hash;
+      var topicIndex = 0;
+      if (hash.length > 0) {
+        $.each(topics, function( ti, t) {
+          if ('#' + t.id == hash) {
+    topicIndex = ti;
+    return false;
+          }
+  });
+}
+return topicIndex;
+}
+
+// select topic from hash on the url
+setCurrentTopic(findTopicIndexFromHash());
+
+// navigate to a topic when the history changes
+window.addEventListener("popstate", function(e) {
+  setCurrentTopic(findTopicIndexFromHash());
+});
+
+}
+
+// update UI after a section gets completed
+// it might be an exercise or it might be an entire topic
+function sectionCompleted(section) {
+  var jqSection = $(section);
+  
+  var topicCompleted = jqSection.hasClass('level2');
+  
+  var topicId;
+  if (topicCompleted) {
+    topicId = jqSection.attr('id');
+  }
+  else {
+    topicId = $(jqSection.parents('.section.level2')).attr('id');
+  }
+  
+  // find the topic in our topics array
+  var topicIndex = -1;
+  $.each(topics, function(ti, t) {
+    if (t.id == topicId) {
+      topicIndex = ti;
+      return false;
+    }
+  });
+  if (topicIndex == -1) {
+    console.log('topic "' + topicId + '" not found');
+    return;
+  }
+  
+  var topic = topics[topicIndex];
+  
+  if (topicCompleted) {         // topic completed
+    topic.topicCompleted = true;
+    updateTopicProgressBar(topicIndex);
+  }
+  else {                        // exercise completed
+    var sectionIndex = -1;
+    var sectionId = jqSection.attr('id');
+    $.each(topic.sections, function(si, s ) {
+      if (s.id == sectionId) {
+        sectionIndex = si;
+        return false;
+      }
+    })
+    if (sectionIndex == -1) {
+      console.log('completed section"' + sectionId + '"not found');
+      return;
+    }
+    
+    // update the UI if the section isn't already marked completed
+      var section = topic.sections[sectionIndex];
+      if (!section.completed) {
+        topic.sectionsCompleted++;
+
+        updateTopicProgressBar(topicIndex);
+
+        // update the exercise
+        $(section.jqElement).addClass('done');
+        section.completed = true;
+
+        // update visibility of topic's exercises and actions
+    updateVisibilityOfTopicElements(topicIndex);
+  }
+}
+}
+
+// update the UI after a section or topic (with 0 sections) gets skipped
+function sectionSkipped(exerciseElement) {
+  var sectionSkippedId;
+  if (exerciseElement.length) {
+    sectionSkippedId = exerciseElement[0].id;
+  }
+  else {  // error
+    console.log('section ' + $(exerciseElement).selector.split('"')[1] +' not found');
+    return;
+  }
+  
+  
+  var topicIndex = -1;
+  $.each(topics, function( ti, topic) {
+    if (sectionSkippedId == topic.id) {
+      topicIndex = ti;
+      topic.topicCompleted = true;
+      return false;
+    }
+    $.each(topic.sections, function( si, section) {
+      if (sectionSkippedId == section.id) {
+        topicIndex = ti;
+        section.skipped = true;
+        topic.sectionsSkipped++;
+        return false;
+      }
+    })
+    return topicIndex == -1;
+  })
+  
+  // update the progress bar
+  updateTopicProgressBar(topicIndex);
+  // update visibility of topic's exercises and actions
+    updateVisibilityOfTopicElements(topicIndex);
+  }
+
+
+  transformDOM();
+  handleLocationHash();
+
+  // initialize components within tutorial.onInit event
+  tutorial.onInit(function() {
+
+    // handle progress events
+    tutorial.onProgress(function(progressEvent) {
+      if (progressEvent.event === "section_completed")
+        sectionCompleted(progressEvent.element);
+      else if (progressEvent.event === "section_skipped")
+        sectionSkipped(progressEvent.element);
+    });
+
+  });
+
+});
+</script>
+
+
+<script>
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+
+</html>
